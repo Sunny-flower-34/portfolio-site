@@ -90,10 +90,6 @@ li {
   padding: 0 40px;
 }
 
-.content {
-  margin-top: 100px;
-}
-
 /*--------------------------------
 ヘッダー
 ---------------------------------*/
@@ -224,8 +220,17 @@ li {
 About
 ---------------------------------*/
 .eeeee {
+  padding-top: 100px;
   text-align: center;
   font-size: 40px;
+  font-family: 'Savoye LET', serif;
+  background-color: rgba(245, 226, 219, 0.797);
+}
+
+.eeeee2 {
+  background-color: rgba(245, 226, 219, 0.797);
+  text-align: center;
+  font-size: 20px;
   font-family: 'Savoye LET', serif;
 }
 
@@ -234,46 +239,180 @@ About
 }
 
 .about-section .inner2 {
-  max-width: 1000px;
+  max-width: 1320px;
   margin: 100px auto;
   padding: 80px 40px;
+  background-color: #ffffff;
 }
 
-.profile {
+.about-section .inner2 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.profile__image {
-  margin: 20px;
+.about-section .inner2 .profile__image {
+  background-color: #a5a5a5;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
-.profile__data {
-  margin: 20px;
+.about-section .inner2 .profile__image .back-box {
+  background-color: #e4c199d2;
+  height: 180px;
+  width: 104px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
 }
 
-.about {
+.about-section .inner2 .profile__image .ee {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  /* 中心を基準点に反時計回りに回転する */
+  position: absolute;
+  bottom: 60px;
+  left: -48px;
+}
+
+.about-section .inner2 .profile__image .my-image {
+  background-color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  width: 67%;
+  height: 85%;
+}
+
+.about-section .inner2 .profile__image .my-image .Twitter-link {
+  position: absolute;
+  bottom: 17px;
+  right: -81px;
+  color: white;
+  background-color: pink;
+}
+
+.about-section .inner2 .profile__data {
   background-color: #a39e9e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 60%;
 }
 
-.about__item__data1 .about__image-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  margin-right: 40px;
+.about-section .inner2 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
 }
 
-.about__body {
-  background-color: #b9b8b8;
+.about-section .inner2 .about__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px;
+  background-color: #bfbfbf;
 }
 
-.about__body p:not(:last-child) {
-  margin-bottom: 20px;
+.about-section .inner2 .about__item .data dt {
+  margin: 15px 0;
+}
+
+.about-section .inner2 .about__item .data dd {
+  margin-bottom: 40px;
+}
+
+.about-section .inner2 .about__item .data dd p {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.about-section .inner2 .about__item .data dd p .fa {
+  margin: 0 4px;
+}
+
+.about-section .inner2 .about__item .data dd p span {
+  margin-left: 5px;
+}
+
+.about-section .inner2 .about__item .data__title {
+  background-color: #decfcf;
+  position: relative;
+  width: 221px;
+  height: 26px;
+}
+
+.about-section .inner2 .about__item .data__title .w-boder {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 10px;
+  width: 103%;
+  height: 100%;
+}
+
+.about-section .inner2 .about__item .data__title .con {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -12px;
+  font-size: 37px;
+  font-family: 'Savoye LET', serif;
+}
+
+.about-section .inner2 .about__body {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background-color: #e6e6e6;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.about-section .inner2 .about__body .data2 dt {
+  margin: 15px 0;
+}
+
+.about-section .inner2 .about__body .data2 dd {
+  margin-bottom: 40px;
+}
+
+.about-section .inner2 .about__body .data2 dd p {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.about-section .inner2 .about__body .data2__title {
+  background-color: #decfcf;
+  position: relative;
+  width: 221px;
+  height: 26px;
+}
+
+.about-section .inner2 .about__body .data2__title .w-boder {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 10px;
+  width: 103%;
+  height: 100%;
+}
+
+.about-section .inner2 .about__body .data2__title .con {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -12px;
+  font-size: 37px;
+  font-family: 'Savoye LET', serif;
 }
 
 /*--------------------------------
- Feature
+  Feature
 ---------------------------------*/
 .feature-section .inner {
   max-width: 1000px;
@@ -602,7 +741,7 @@ About
   .about-item {
     display: block;
   }
-  .about-image-wrapper {
+  .profile__image-wrapper {
     width: 100px;
     max-width: 100%;
     margin: 0 auto 20px;
