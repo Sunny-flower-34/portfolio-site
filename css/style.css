@@ -249,6 +249,7 @@ About
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px 0;
 }
 
 .about-section .inner2 .profile__image {
@@ -317,7 +318,7 @@ About
       -ms-flex: 1;
           flex: 1;
   padding: 15px;
-  background-color: #bfbfbf;
+  background-color: #cbcaca;
 }
 
 .about-section .inner2 .about__item .data dt {
@@ -333,6 +334,10 @@ About
   font-size: 15px;
 }
 
+.about-section .inner2 .about__item .data dd p i {
+  font-size: 18px;
+}
+
 .about-section .inner2 .about__item .data dd p .fa {
   margin: 0 4px;
 }
@@ -342,7 +347,7 @@ About
 }
 
 .about-section .inner2 .about__item .data__title {
-  background-color: #decfcf;
+  background-color: #decfcffc;
   position: relative;
   width: 221px;
   height: 26px;
@@ -369,7 +374,7 @@ About
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
-  background-color: #e6e6e6;
+  background-color: white;
   margin-left: 10px;
   padding: 15px;
 }
@@ -388,14 +393,14 @@ About
 }
 
 .about-section .inner2 .about__body .data2__title {
-  background-color: #decfcf;
+  background-color: #f7e8e8;
   position: relative;
   width: 221px;
   height: 26px;
 }
 
 .about-section .inner2 .about__body .data2__title .w-boder {
-  border: 1px solid white;
+  border: 1px solid #c6c6c6;
   position: absolute;
   bottom: 10px;
   width: 103%;
@@ -409,6 +414,37 @@ About
   bottom: -12px;
   font-size: 37px;
   font-family: 'Savoye LET', serif;
+}
+
+.about-section .inner2 .about__body .data2 .target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+}
+
+.about-section .inner2 .about__body .data2 .target .term {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+  padding: 8px;
+  margin: 5px;
+}
+
+.about-section .inner2 .about__body .data2 .target .term__title {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid;
+  font-size: 18px;
+}
+
+.about-section .inner2 .about__body .data2 .target .term__text {
+  padding: 5px 0;
+  font-size: 16px;
 }
 
 /*--------------------------------

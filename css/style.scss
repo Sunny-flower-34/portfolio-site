@@ -272,6 +272,7 @@ About
 
     .profile {
       display: flex;
+      margin: 10px 0;
 
       &__image {
         background-color: rgb(165, 165, 165);
@@ -363,7 +364,7 @@ About
         flex: 1;
         padding: 15px;
         // height: 90%;
-        background-color: rgb(191, 191, 191);
+        background-color: rgb(203, 202, 202);
 
         .data {
 
@@ -380,6 +381,11 @@ About
               margin: 5px;
               font-size: 15px;
 
+              i {
+                // color: #fff;
+                font-size: 18px;
+              }
+
               .fa {
                 margin: 0 4px;
               }
@@ -391,7 +397,7 @@ About
           }
 
           &__title {
-            background-color: #decfcf;
+            background-color: #decfcffc;
             position: relative;
             width: 221px;
             height: 26px;
@@ -420,7 +426,7 @@ About
       &__body {
         flex: 5;
         // margin: 40px;
-        background-color: rgb(230, 230, 230);
+        background-color: rgb(255, 255, 255);
         margin-left: 10px;
         padding: 15px;
 
@@ -443,23 +449,23 @@ About
               font-size: 15px;
 
               // .fa {
- //   margin: 0 4px;
- // }
+              //   margin: 0 4px;
+              // }
 
- // span {
- //   margin-left: 5px;
- // }
+              // span {
+              //   margin-left: 5px;
+              // }
             }
           }
 
           &__title {
-            background-color: #decfcf;
+            background-color: #f7e8e8;
             position: relative;
             width: 221px;
             height: 26px;
 
             .w-boder {
-              border: 1px solid rgb(255, 255, 255);
+              border: 1px solid rgb(198, 198, 198);
               position: absolute;
               bottom: 10px;
               width: 103%;
@@ -475,7 +481,36 @@ About
               font-size: 37px;
               font-family: 'Savoye LET', serif;
             }
+
           }
+
+          .target {
+            // background-color: rgb(188, 188, 188);
+            display: flex;
+            padding: 2px;
+
+            .term {
+              flex: 1;
+              box-sizing: border-box;
+              // border: 1px solid #333;
+              box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+              padding: 8px;
+              margin: 5px;
+
+              &__title {
+                text-align: center;
+                padding: 5px 0;
+                border-bottom: 1px solid;
+                font-size: 18px;
+              }
+
+              &__text {
+                padding: 5px 0;
+                font-size: 16px;
+              }
+            }
+          }
+
         }
       }
     }
