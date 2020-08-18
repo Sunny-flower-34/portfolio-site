@@ -73,15 +73,20 @@ li {
   text-align: center;
 }
 
+.video2 {
+  width: 400px;
+}
+
 /*--------------------------------
  レイアウト
 ---------------------------------*/
 .wrapper {
   background-color: #fff;
+  color: #646464;
 }
 
 .section {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .inner {
@@ -169,7 +174,7 @@ li {
 .gnav {
   z-index: 1;
   font-family: "Cormorant Garamond", serif;
-  padding: 40px;
+  padding: 30px;
   background-color: #333;
 }
 
@@ -217,30 +222,40 @@ li {
 }
 
 /*--------------------------------
-About
+小見出し
 ---------------------------------*/
-.eeeee {
+.subheading {
   padding-top: 100px;
   text-align: center;
   font-size: 40px;
   font-family: 'Savoye LET', serif;
-  background-color: rgba(245, 226, 219, 0.797);
+  background-color: #e09b9d;
+  color: #fff;
 }
 
-.eeeee2 {
-  background-color: rgba(245, 226, 219, 0.797);
+.subheading2 {
+  background-color: #e09b9d;
+  color: #fff;
   text-align: center;
   font-size: 20px;
   font-family: 'Savoye LET', serif;
+  padding-bottom: 100px;
 }
 
-.about-section {
-  background-color: rgba(245, 226, 219, 0.797);
+/*--------------------------------
+About
+---------------------------------*/
+.fadeInUp {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .about-section .inner2 {
   max-width: 1320px;
-  margin: 100px auto;
+  margin: 0 auto;
   padding: 80px 40px;
   background-color: #ffffff;
 }
@@ -249,61 +264,68 @@ About
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 0;
 }
 
 .about-section .inner2 .profile__image {
-  background-color: #a5a5a5;
   width: 40%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 450px;
   position: relative;
 }
 
 .about-section .inner2 .profile__image .back-box {
   background-color: #e4c199d2;
-  height: 180px;
-  width: 104px;
+  height: 271px;
+  width: 170px;
   position: absolute;
   bottom: 8px;
   left: 8px;
 }
 
 .about-section .inner2 .profile__image .ee {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   /* 中心を基準点に反時計回りに回転する */
   position: absolute;
-  bottom: 60px;
-  left: -48px;
+  bottom: 44px;
+  left: -3px;
 }
 
-.about-section .inner2 .profile__image .my-image {
-  background-color: #f2f2f2;
-  font-size: 15px;
+.about-section .inner2 .profile__image .my-image img {
+  width: 384px;
+  height: 424px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
   position: absolute;
-  bottom: 30px;
-  left: 40px;
-  width: 67%;
-  height: 85%;
+  bottom: 23px;
+  left: 39px;
 }
 
 .about-section .inner2 .profile__image .my-image .Twitter-link {
   position: absolute;
-  bottom: 17px;
-  right: -81px;
+  bottom: 40px;
+  right: 20px;
   color: white;
-  background-color: pink;
+  background-color: #cbcaca;
+  padding: 3px 30px;
 }
 
 .about-section .inner2 .profile__data {
-  background-color: #a39e9e;
+  margin-left: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 60%;
+}
+
+.about-section .inner2 .profile__data dl {
+  margin: 40px 0;
+}
+
+.about-section .inner2 .profile__data dl dd {
+  margin-bottom: 30px;
 }
 
 .about-section .inner2 .about {
@@ -317,8 +339,9 @@ About
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 15px;
+  padding: 15px 17px 0;
   background-color: #cbcaca;
+  height: 1116px;
 }
 
 .about-section .inner2 .about__item .data dt {
@@ -450,34 +473,91 @@ About
 /*--------------------------------
   Feature
 ---------------------------------*/
-.feature-section .inner {
-  max-width: 1000px;
-  background-color: 0;
+.feature-section {
+  background-color: #e09b9d;
 }
 
-.feature-item {
+.feature-section .inner {
+  max-width: 1600px;
+  background-color: #fff;
+  padding: 90px;
+}
+
+.feature-section .feature__item {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 500px;
 }
 
-.feature-image-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 48%;
-          flex: 0 0 48%;
-  margin-right: 40px;
+.feature-section .feature__item .feature-image-wrapper .video1 {
+  width: 700px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
 }
 
-.feature-body {
+.feature-section .feature__item .bg-pink {
+  background-color: #fce7f1;
+  width: 700px;
+  height: 436px;
+  position: relative;
+}
+
+.feature-section .feature__item .feature__item__data {
+  margin-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feature-section .feature__item .feature__item__data p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn.btn-primary {
+  cursor: pointer;
+  background: #fce7f1;
+  border: 2px solid #fce7f1;
+  color: #ee76ad;
+  border-radius: 30px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.btn.btn-primary:hover {
+  border: 2px solid #ee76ad;
+  color: #ee76ad;
+  background: transparent;
+  background: #fff;
+}
+
+.feature__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__body__1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 5px 10px;
 }
 
-.feature-body p:not(:last-child) {
-  margin-bottom: 20px;
+.feature__body__2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 5px 10px;
 }
 
 /*--------------------------------
@@ -527,6 +607,10 @@ About
 ---------------------------------*/
 .skill-section .inner {
   max-width: 1000px;
+}
+
+.skill-section .inner i {
+  font-size: 40px;
 }
 
 .skill-list {
