@@ -53,20 +53,20 @@ li {
 ---------------------------------*/
 .heading-primary {
   font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
+  font-size: 100px;
   line-height: 1;
   display: inline-block;
   letter-spacing: .2em;
   letter-spacing: .1em;
   // text-transform: lowercase;
   // color: #f39ac7;
-  color: #333;
+  color: rgb(205, 205, 205);
 }
 
 .section-heading {
   margin-bottom: 10px;
   text-align: center;
-  color: rgb(236, 236, 236);
+  // color: rgb(236, 236, 236);
 }
 
 .section-lead {
@@ -203,6 +203,66 @@ li {
   }
 }
 
+.hero__footer {
+  position: absolute;
+  // left: 10%;
+  right: 20px;
+  bottom: 30px;
+  // -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
+  height: 145px;
+  width: 89px;
+}
+
+.hero__scrolltext {
+  font-family: "Cormorant Garamond", serif;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.7);
+  left: -35px;
+  top: -5px;
+  font-size: 16px;
+}
+
+@keyframes eee {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  100% {
+    transform: translate(0, -20px)
+  }
+}
+
+
+.hero__scrolldown {
+  position: absolute;
+  top: -1.75rem;
+  left: -0.5rem;
+  width: 0px;
+  height: 9rem;
+  border: 0.8px solid #ffffff;
+  animation-name: eee;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+
+.hero__scrolldown::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  width: 1px;
+  height: 10px;
+  border-top: 12px solid #ffffff;
+  border-left: 0px solid transparent;
+  border-right: 8px solid transparent;
+}
 
 /*--------------------------------
 グローバルナビ
@@ -298,7 +358,7 @@ About
   // background-color: rgba(245, 226 219, 0.797);
 
   .inner2 {
-    max-width: 1320px;
+    max-width: 1600px;
     // max-width: 1320px;
     margin: 0 auto;
     padding: 80px 40px;
@@ -314,11 +374,6 @@ About
         width: 40%;
         // background-color: rgb(165, 165, 165);
         height: 450px;
-        // display: 1;
-        // margin: 20px;
-        // width: 40%;
-        // box-sizing: border-box;
-        // display: flex;
         position: relative;
 
 
@@ -353,32 +408,6 @@ About
             left: 39px;
           }
 
-          // background-image: url("../img/IMG_2656.JPG");
-          // background-size: cover;
-          // 
-          // background-color: rgb(242, 242, 242);
-
-          // font-size: 15px;
-          // position: absolute;
-          // bottom: 30px;
-          // left: 40px;
-          // width: 67%;
-          // height: 85%;
-          // z-index: 1;
-
-
-          // .profile__image-wrapper {
-          //   // flex: 0 0 25%;
-          //   // margin-right: 40px;
-          //   // width: 100px;
-          //   // height: 100px;
-          // }
-          .profile__image {
-
-            // height: 200px;
-
-          }
-
           .Twitter-link {
             position: absolute;
             bottom: 40px;
@@ -401,10 +430,13 @@ About
         dl {
           margin: 40px 0;
 
-          dt {}
+          dt {
+            font-size: 30px;
+          }
 
           dd {
             margin-bottom: 30px;
+            font-size: 25px;
           }
         }
 
@@ -415,36 +447,26 @@ About
 
     .about {
       display: flex;
-      // display: flex;
       margin-top: 15px;
 
-      // color: red($color: #000000);
-      // justify-content: space-between;
-      // flex-wrap: wrap;
       &__item {
         flex: 1;
         padding: 15px 17px 0;
-        // height: 90%;
         background-color: rgb(203, 202, 202);
-        height: 1116px;
 
         .data {
-
-          // color: rgb(245, 244, 244);
           dt {
             margin: 15px 0;
           }
 
           dd {
             margin-bottom: 40px;
-            // background-color: #fff;
 
             p {
               margin: 5px;
               font-size: 15px;
 
               i {
-                // color: #fff;
                 font-size: 18px;
               }
 
@@ -477,7 +499,6 @@ About
               text-align: center;
               position: absolute;
               bottom: -12px;
-              // top: 9px;
               font-size: 37px;
               font-family: 'Savoye LET', serif;
             }
@@ -496,8 +517,6 @@ About
         //   margin-bottom: 20px;
         // }
         .data2 {
-
-          // color: rgb(245, 244, 244);
           dt {
             margin: 15px 0;
           }
@@ -509,14 +528,6 @@ About
             p {
               margin: 5px;
               font-size: 15px;
-
-              // .fa {
-              //   margin: 0 4px;
-              // }
-
-              // span {
-              //   margin-left: 5px;
-              // }
             }
           }
 
@@ -584,9 +595,13 @@ About
 /*--------------------------------
   Feature
 ---------------------------------*/
+.bg-pink {
+  background-color: #e09b9d;
+
+}
+
 .feature-section {
 
-  background-color: #e09b9d;
 
   .inner {
     max-width: 1600px;
@@ -646,7 +661,7 @@ About
   background: #fce7f1;
   border: 2px solid #fce7f1;
   color: #ee76ad;
-  border-radius: 30px;
+  border-radius: 5px;
   transition: all .5s ease;
 }
 
@@ -720,8 +735,14 @@ About
 /*--------------------------------
  Skill
 ---------------------------------*/
+.skill-bg {
+  // background-image: url("../img/IMG_2343.JPG");
+}
+
 .skill-section .inner {
   max-width: 1000px;
+  background-color: #fff;
+  object-fit: cover;
 
   i {
     font-size: 40px;
@@ -819,19 +840,41 @@ About
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-}
 
-.contact-item {
-  width: 100px;
-  margin: 0 20px;
-  text-align: center;
-}
+  .contact-item {
+    width: 100px;
+    margin: 0 20px;
+    text-align: center;
 
-.contact-name {
-  font-size: 12px;
-  display: block;
-  margin-top: 5px;
-  color: #333;
+    .fa-github {
+      font-size: 56px;
+      color: #646464;
+
+    }
+
+    .fa-envelope {
+      font-size: 34px;
+      color: #fff;
+      background-color: #646464;
+      border-radius: 50%;
+      padding: 11px;
+    }
+
+    .fa-twitter {
+      font-size: 37px;
+      color: #fff;
+      background-color: #646464;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .contact-name {
+      font-size: 12px;
+      display: block;
+      margin-top: 5px;
+      color: #333;
+    }
+  }
 }
 
 .contact-image {
@@ -843,6 +886,7 @@ About
   margin-top: 10px;
   text-align: center;
 }
+
 
 /*--------------------------------
  Footer

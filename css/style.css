@@ -54,18 +54,17 @@ li {
 ---------------------------------*/
 .heading-primary {
   font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
+  font-size: 100px;
   line-height: 1;
   display: inline-block;
   letter-spacing: .2em;
   letter-spacing: .1em;
-  color: #333;
+  color: #cdcdcd;
 }
 
 .section-heading {
   margin-bottom: 10px;
   text-align: center;
-  color: #ececec;
 }
 
 .section-lead {
@@ -168,6 +167,82 @@ li {
   color: #333;
 }
 
+.hero__footer {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  height: 145px;
+  width: 89px;
+}
+
+.hero__scrolltext {
+  font-family: "Cormorant Garamond", serif;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.7);
+  left: -35px;
+  top: -5px;
+  font-size: 16px;
+}
+
+@-webkit-keyframes eee {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+
+@keyframes eee {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+
+.hero__scrolldown {
+  position: absolute;
+  top: -1.75rem;
+  left: -0.5rem;
+  width: 0px;
+  height: 9rem;
+  border: 0.8px solid #ffffff;
+  -webkit-animation-name: eee;
+          animation-name: eee;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.hero__scrolldown::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  width: 1px;
+  height: 10px;
+  border-top: 12px solid #ffffff;
+  border-left: 0px solid transparent;
+  border-right: 8px solid transparent;
+}
+
 /*--------------------------------
 グローバルナビ
 ---------------------------------*/
@@ -254,7 +329,7 @@ About
 }
 
 .about-section .inner2 {
-  max-width: 1320px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 80px 40px;
   background-color: #ffffff;
@@ -324,8 +399,13 @@ About
   margin: 40px 0;
 }
 
+.about-section .inner2 .profile__data dl dt {
+  font-size: 30px;
+}
+
 .about-section .inner2 .profile__data dl dd {
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .about-section .inner2 .about {
@@ -341,7 +421,6 @@ About
           flex: 1;
   padding: 15px 17px 0;
   background-color: #cbcaca;
-  height: 1116px;
 }
 
 .about-section .inner2 .about__item .data dt {
@@ -473,7 +552,7 @@ About
 /*--------------------------------
   Feature
 ---------------------------------*/
-.feature-section {
+.bg-pink {
   background-color: #e09b9d;
 }
 
@@ -528,7 +607,7 @@ About
   background: #fce7f1;
   border: 2px solid #fce7f1;
   color: #ee76ad;
-  border-radius: 30px;
+  border-radius: 5px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -607,6 +686,9 @@ About
 ---------------------------------*/
 .skill-section .inner {
   max-width: 1000px;
+  background-color: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .skill-section .inner i {
@@ -729,13 +811,34 @@ About
   margin: 0 auto;
 }
 
-.contact-item {
+.contact-list .contact-item {
   width: 100px;
   margin: 0 20px;
   text-align: center;
 }
 
-.contact-name {
+.contact-list .contact-item .fa-github {
+  font-size: 56px;
+  color: #646464;
+}
+
+.contact-list .contact-item .fa-envelope {
+  font-size: 34px;
+  color: #fff;
+  background-color: #646464;
+  border-radius: 50%;
+  padding: 11px;
+}
+
+.contact-list .contact-item .fa-twitter {
+  font-size: 37px;
+  color: #fff;
+  background-color: #646464;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.contact-list .contact-item .contact-name {
   font-size: 12px;
   display: block;
   margin-top: 5px;
