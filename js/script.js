@@ -86,4 +86,34 @@ $(function () {
     );
     return false;
   });
+
+  // function Play1() {
+  //   console.log("sa");
+  //   document.getElementById("test1").play();
+  // }
+  // //一時停止
+  // function Pause1() {
+  //   document.getElementById("test1").pause();
+  // }
+  // //最初から再生
+  // function PlayFromFirst1() {
+  //   document.getElementById("test1").currentTime = 0;
+  //   document.getElementById("test1").play();
+  // }
+  $(".playBtn").click(function () {
+    if ($("#video1")[0].paused) {
+      $("#video1")[0].play();
+      $(".Btn").css("opacity", "0.0");
+    } else {
+      $("#video1")[0].pause();
+    }
+  });
+  $(".playBtn2").click(function () {
+    if ($("#video2")[0].paused) {
+      $("#video2")[0].play();
+      $(".Btn2").css("opacity", "0.0");
+    } else {
+      $("#video2")[0].pause();
+    }
+  });
 });
