@@ -72,6 +72,9 @@
             </div>
           </h1>
         </div>
+        <div class="side">
+          <span class="side__font">2020 HARUKA'S PORTFOLIO</span>
+        </div>
         <div class="hero__footer">
           <!-- <img class="hero__downarrow" src="img/arrow-right.svg"> -->
           <span class="hero__scrolltext">SCROLL DOWN</span>
@@ -86,11 +89,19 @@
           <!-- <div id="js-page-top" class="page-top">
           トップへもどる
         </div> -->
-          <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#feature-section">PORTFOLIO</a></li>
-        <!-- <li class="gnav-item"><a class="gnav-link" href="#works-section">PORTFOLIO</a></li> -->
-        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+          <li class="gnav-item">
+            <a class="gnav-link" href="#about-section">ABOUT</a>
+          </li>
+          <li class="gnav-item">
+            <a class="gnav-link" href="#feature-section">PORTFOLIO</a>
+          </li>
+          <!-- <li class="gnav-item"><a class="gnav-link" href="#works-section">PORTFOLIO</a></li> -->
+          <li class="gnav-item">
+            <a class="gnav-link" href="#skill-section">SKILL</a>
+          </li>
+          <li class="gnav-item">
+            <a class="gnav-link" href="#contact-section">CONTACT</a>
+          </li>
           <!-- <li class="gnav-item">
             <a class="gnav-link" href="#about-section">About</a>
           </li>
@@ -127,10 +138,10 @@
         <div class="fadeInUp">
           <section class="about-section section" id="about-section">
             <div class="inner2">
-              <div class="section-heading">
+              <!-- <div class="section-heading">
                 <h2 class="heading-primary">ABOUT</h2>
                 <p class="section-lead">※ひとこと</p>
-              </div>
+              </div> -->
 
               <!-- ここからボディ -->
               <div class="profile">
@@ -141,7 +152,9 @@
                     <!-- <div class="profile__image-wrapper"> -->
                     <img class="profile__image" src="img/IMG_2656.JPG" alt="" />
                     <!-- </div> -->
-                    <p class="Twitter-link">Twitter links →</p>
+                    <a class="contact-image-wrapper" href="https://twitter.com/sunny63374783" target="_blank">
+                    <button data-hover="click me!"><div><i class="fab fa-twitter"></i>Twitter</div></button>
+                    </a>
                   </div>
                 </div>
                 <div class="profile__data">
@@ -212,13 +225,14 @@
                     </dt>
                     <dd>
                       <p>
-                        2007-2009
-                        東京ビューティアート専門学校　トータルビューティ科
+                        2007-2009 東京ビューティアート専門学校
+                        トータルビューティ科
                       </p>
                       <p>2009-2012 エステサロン勤務</p>
                       <p>2012-2020 飲食サービス会社勤務</p>
                       <p>
-                        2020- 学習開始（詳しくは下記をご覧ください　<span
+                        2020- 学習開始（詳しくは下記をご覧ください
+                        <span
                           ><a class="gnav-link" href="#skill-section"
                             >Linkはこちら</a
                           ></span
@@ -244,7 +258,7 @@
                             できるだけ早くキャッチアップできるように常にそこに向かって全力で努力します！<br />
 
                             自分の理想のキャリアプランを実現できるように具体的な目標設定をすることで仕事の効率や成果を上げやスクすると共に、モチベーションアップ
-                            詳細設計、プログラミング、テスト　構築、運用、監視などの知識、技術を身に着けていきたいと思っています。
+                            詳細設計、プログラミング、テスト、構築、運用、監視などの知識、技術を身に着けていきたいと思っています。
                           </p>
                         </div>
                         <div class="term">
@@ -279,10 +293,16 @@
         </div>
         <!-- /.about-secion -->
         <div class="fadeInUp">
-          <p class="subheading">Feature</p>
-          <p class="subheading2">The latest personalized application</p>
+          <p class="subheading">My portfolio list</p>
+          <p class="subheading2">Creating web applications for output from the start of learning</p>
         </div>
         <!-- .feature-section -->
+        <marquee class="roop">
+          <span class="fuchi loop__content">Portfolio</span>
+          <span class="fuchi loop__content">Portfolio</span>
+          <span class="fuchi loop__content">Portfolio</span>
+          <span class="fuchi loop__content">Portfolio</span>
+        </marquee>
         <div class="fadeInUp">
           <section class="feature-section section" id="feature-section">
             <div class="inner3">
@@ -295,95 +315,126 @@
               <div class="section-body feature-body">
                 <!-- エンコーダーサロン -->
                 <div class="fadeInUp">
-                <div class="feature p-1">
-                  <div class="feature__item item1">
-                    <video class="video1" src="img/i.mov" autoplay muted controls></video>
-                    <div class="feature-title">
-                      Encounter salon
-                      <div class="Ex">(個人開発)※随時機能実装中2020/８現在</div>
+                  <div class="feature p-1">
+                    <div class="feature__item item1">
+                      <video
+                        class="video1"
+                        src="img/i.mov"
+                        autoplay
+                        muted
+                        controls
+                      ></video>
+                      <div class="feature-title">
+                        Encounter Salon
+                        <div class="Ex">
+                          (個人開発)※随時機能実装中2020/８現在
+                        </div>
+                      </div>
+                      <div class="feature-url Encounter">
+                        <a
+                          class="feature-url-link button"
+                          href="https://github.com/Sunny-flower-34/salon"
+                          target="_blank"
+                          >GitHub<span><i class="fab fa-github"></i></span
+                        ></a>
+                        <a class="feature-url-link button2" href="#"
+                          >View Portfolio</a
+                        >
+                      </div>
                     </div>
-                    <div class="feature-url Encounter">
-                      <a class="feature-url-link button" href="https://github.com/Sunny-flower-34/salon" target="_blank">GitHub<span><i class="fab fa-github"></i></span></a>
-                      <a class="feature-url-link button2" href="https://github.com/Sunny-flower-34/salon" target="_blank">View Portfolio</a>
+                    <div class="feature__body body1">
+                      <p class="number portfolio-title">
+                        <span class="en">portflio</span>
+                        <span class="no">
+                          <span class="type-v">0</span>
+                          <span class="type-v">1</span>
+                        </span>
+                      </p>
+                      <p>制作期間：1ヶ月</p>
+                      <p>
+                        使用言語：Ruby / Rails / AWS / HTML5 / SCSS / JavaScript
+                        / jQuery
+                      </p>
+                      <p>
+                        開発機能：ユーザー登録・投稿機能・タグ機能・トークルーム機能・コメント機能
+                      </p>
+                      <p>使用したGem：Devise</p>
+                      <p>
+                        なぜ作ったのか：テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        なぜ作ったのか：テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        なぜ作ったのか：テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                      </p>
+                      <p>大変だった、難しかった事</p>
                     </div>
                   </div>
-                  <div class="feature__body body1">
-                    <p class="number portfolio-title">
-                      <span class="en">portflio</span>
-                      <span class="no">
-                        <span class="type-v">0</span>
-                        <span class="type-v">1</span>
-                      </span>
-                    </p>
-                    <p>制作期間：1ヶ月</p>
-                    <p>
-                      使用言語：Ruby / Rails / AWS / HTML5 / SCSS / JavaScript / jQuery
-                    </p>
-                    <p>
-                      開発機能：ユーザー登録・投稿機能・タグ機能・トークルーム機能・コメント機能
-                    </p>
-                    <p>使用したGem：Devise</p>
-                    <p>
-                      なぜ作ったのか：テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                    </p>
-                    <p>大変だった、難しかった事</p>
-                    <p>
-                      <!-- <a href="portfolio.html" class="btn btn-primary px-4">View Portfolio</a> -->
-                    </p>
-                  </div>
-                </div>
                 </div>
                 <!-- フリマ -->
                 <div class="fadeInUp">
-                <div class="feature p-2">
-                  <div class="feature__item item2">
-                    <video class="video1 fleama-v" src="img/i.mov" autoplay muted controls></video>
-                    <div class="feature-title">
-                      Free Market
-                      <div class="Ex">(スクールでのカリキュラム作品）</div>
+                  <div class="feature p-2">
+                    <div class="feature__item item2">
+                      <video
+                        class="video1 fleama-v"
+                        src="img/i.mov"
+                        autoplay
+                        muted
+                        controls
+                      ></video>
+                      <div class="feature-title">
+                        Free Market
+                        <div class="Ex">(スクールでのカリキュラム作品）</div>
+                      </div>
+                      <div class="feature-url Fleam">
+                        <a
+                          class="feature-url-link button"
+                          href="https://github.com/Sunny-flower-34/salon"
+                          target="_blank"
+                          >GitHub<span><i class="fab fa-github"></i></span
+                        ></a>
+                        <a
+                          class="feature-url-link button2"
+                          href="#"
+                          target="_blank"
+                          >View Portfolio</a
+                        >
+                      </div>
                     </div>
-                    <div class="feature-url Fleam">
-                      <a class="feature-url-link button" href="https://github.com/Sunny-flower-34/salon" target="_blank">GitHub<span><i class="fab fa-github"></i></span></a>
-                      <a class="feature-url-link button2" href="https://github.com/Sunny-flower-34/salon" target="_blank">View Portfolio</a>※あとで
+                    <div class="feature__body body2">
+                      <p class="number portfolio-title">
+                        <span class="en">portflio</span>
+                        <span class="no">
+                          <span class="type-v">0</span>
+                          <span class="type-v">2</span>
+                        </span>
+                      </p>
 
+                      <div class="works-text">
+                        Ruby/ Rails / AWS / Haml / SCSS / JavaScript / JQuery
+                      </div>
+                      <div class="works-text">
+                        開発担当箇所：DB設計 /トップページ,ヘッダー
+                        /商品出品機能 /商品編集機能 /商品詳細表示 /カテゴリ機能
+                        /商品名検索機能
+                      </div>
+                      <div class="works-text">
+                        使用したGem：Devise /ancestry /carrierwave,minimagick
+                      </div>
+                      <div class="works-text">
+                        チーム開発で学んだ事：<br />
+                        私はチーム開発でスクラムマスター(チームの調整役)になって開発を進めたのですが、オンライン完結でのチーム開発、
+                        「初めまして」で一つのプロダクトを作るという状況で、コミュニケーションを取りながらうまく開発を進めるのはなかなか難しいものがありました。<br />
+                        初心者とは言え、「得意・不得意」やモチベーションがチームメンバーで異なりタスクの偏りが起きる事が懸念点だった<br />
+                        調整役としてはその事による不平不満を感じないための意見の場を設け、考えを聞く事を特に意識しました。<br />
+                        自身の作業に関するあらゆること（取組・変更内容・エラー対応や考え方etc)を小まめに共有することで、説明力・言語化などたくさんの課題はあったものの各人がそれぞれの考え方や全体の状況把握ができ、スムーズな開発にも繋がるのではないかと考えました。<br />
+                        小まめなコミュニケーションと共有によりお互いが不満をためず、お互いを補い合って開発することができました。<br />
+                        最終的には今まで一人で悩んでいた部分を共有できたり、別の解決法が学べたりといいサイクルができて、知識が加速的に増えたのが良かったと思います。
+                      </div>
                     </div>
                   </div>
-                  <div class="feature__body body2">
-                    <p class="number portfolio-title">
-                      <span class="en">portflio</span>
-                      <span class="no">
-                        <span class="type-v">0</span>
-                        <span class="type-v">2</span>
-                      </span>
-                    </p>
-                    
-                    <div class="works-text">
-                      Ruby/ Rails / AWS / Haml / SCSS / JavaScript / JQuery
-                    </div>
-                    <div class="works-text">
-                      開発担当箇所：DB設計 /トップページ,ヘッダー /商品出品機能 /商品編集機能 /商品詳細表示 /カテゴリ機能 /商品名検索機能
-                    </div>
-                    <div class="works-text">
-                      使用したGem：Devise /ancestry /carrierwave,minimagick
-                    </div>
-                    <div class="works-text">
-                      チーム開発で学んだ事：<br/>
-                      私はチーム開発でスクラムマスター(チームの調整役)になって開発を進めたのですが、オンライン完結でのチーム開発、
-                      「初めまして」で一つのプロダクトを作るという状況で、コミュニケーションを取りながらうまく開発を進めるのはなかなか難しいものがありました。<br />
-                      初心者とは言え、「得意・不得意」やモチベーションがチームメンバーで異なりタスクの偏りが起きる事が懸念点だった<br />
-                      調整役としてはその事による不平不満を感じないための意見の場を設け、考えを聞く事を特に意識しました。<br />
-                      自身の作業に関するあらゆること（取組・変更内容・エラー対応や考え方etc)を小まめに共有することで、説明力・言語化などたくさんの課題はあったものの各人がそれぞれの考え方や全体の状況把握ができ、スムーズな開発にも繋がるのではないかと考えました。<br />
-                      小まめなコミュニケーションと共有によりお互いが不満をためず、お互いを補い合って開発することができました。<br />
-                      最終的には今まで一人で悩んでいた部分を共有できたり、別の解決法が学べたりといいサイクルができて、知識が加速的に増えたのが良かったと思います。
-                    </div>
-                  </div>
-                </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
         <!-- /.feature-secion -->
 
         <!-- .works-secion -->
@@ -405,13 +456,21 @@
                         <video id="video1" class="video2">
                           <source src="img/chat-spase.mov" type="video/mp4" />
                         </video>
-                        <a class="playBtn"><span class="video-btn Btn"><i class="fab fa-youtube"></i></span></a>
+                        <a class="playBtn"
+                          ><span class="video-btn Btn"
+                            ><i class="fab fa-youtube"></i></span
+                        ></a>
                         <div class="works-title">
                           Chat-space
                           <div class="Ex">（スクールカリキュラム作品）</div>
                         </div>
                         <div class="works-url chat">
-                          <a class="works-url-link button" href="https://github.com/Sunny-flower-34/chat-space" target="_blank">GitHub<span><i class="fab fa-github"></i></span></a>
+                          <a
+                            class="works-url-link button"
+                            href="https://github.com/Sunny-flower-34/chat-space"
+                            target="_blank"
+                            >GitHub<span><i class="fab fa-github"></i></span
+                          ></a>
                         </div>
                       </figure>
                       <figcaption class="works-body w-b1">
@@ -459,13 +518,9 @@
                           Ruby/ Rails / AWS / HTML / SCSS / JavaScript / JQuery
                         </div>
                         <div class="works-text">
-                          機能：ツイート一覧表示 /
-                          ツイート投稿 /
-                          ツイート削除 /
-                          ツイート編集 /
-                          ツイート詳細表示 /
-                          ユーザー新規登録/ログイン /
-                          ツイートへコメント /
+                          機能：ツイート一覧表示 / ツイート投稿 / ツイート削除 /
+                          ツイート編集 / ツイート詳細表示 /
+                          ユーザー新規登録/ログイン / ツイートへコメント /
                           ツイート検索 /
                         </div>
                       </figcaption>
@@ -524,15 +579,12 @@
                           </span>
                         </p>
                         <div class="works-text">
-                           使用言語：Heroke / HTML / SCSS / JavaScript / JQuery
+                          使用言語：Heroke / HTML / SCSS / JavaScript / JQuery
                         </div>
                         <div class="works-text">
-                          自己紹介 / 成果物一覧 / 学習推移 / お問い合わせ 
-                          
+                          自己紹介 / 成果物一覧 / 学習推移 / お問い合わせ
                         </div>
-                        <div class="works-text">
-                          制作期間：２週間
-                        </div>
+                        <div class="works-text">制作期間：２週間</div>
                       </figcaption>
                     </div>
                   </div>
@@ -544,177 +596,397 @@
         <!-- /.works-secion -->
 
         <!-- .skill-secion -->
+        <marquee class="roop">
+          <span class="fuchi loop__content">Skill</span>
+          <span class="fuchi loop__content">Skill</span>
+          <span class="fuchi loop__content">Skill</span>
+          <span class="fuchi loop__content">Skill</span>
+        </marquee>
         <div class="skill-bg">
           <div class="fadeInUp">
             <section class="skill-section section" id="skill-section">
               <div class="inner">
-                <div class="section-heading">
+                <!-- <div class="section-heading">
                   <h2 class="heading-primary">SKILL</h2>
-                </div>
+                </div> -->
                 <div class="section-lead">
                   <p>
-                    学習開始：２月
-                    2月16日から現在まで1日も休む事なく継続して学習を続けています
-                    2019年に学習したプログラミングスキル 5月16日〜5月27日( 12
-                    日) ： HTML,CSS 5月27日〜6月17日( 22 日) ：
-                    JavaScript,jQuery 6月18日〜6月30日( 13 日) ： PHP
-                    6月30日〜8月11日( 43 日) ： WordPress 8月12日〜現在( 371 日)
-                    ： Ruby,Ruby on Rails 成果物については下記参照ください
+                    学習開始：2020/02〜<br>
+                    総学習時間：1000h〜(下記詳細にて目安の学習時間を記載)<br>
+                    2020/02/16〜現在まで1日も休む事なく継続して学習を続けています(213日〜)<br>
+                    主な学習方法：Progate／ドットインストール／YouTube／Udemy／テックキャンプ受講／勉強会参加<br>
+                    <br>
                   </p>
                 </div>
+                <!-- ここからボディ -->
                 <div class="section-body skill">
                   <div class="skill-list">
+                    
+                    <!-- CSS HTML -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-html5"></i>
-                      </div>
-                      <div class="skill-body">
-                        <h3 class="skill-title">HTML5 / Haml</h3>
-                        <div class="skill-rating rating">
-                          <div class="rate rate4"></div>
-                        </div>
-                        <p>
-                          ・「Progate（HTML, CSS）コース」の習得。
-                          ・「Progate（sass）コース」の習得。
-                          ・「ドットインストール（はじめてのHTML）」の習得。
-                          ・「ドットインストール（はじめてのCSS）」の習得。
-                        </p>
-                      </div>
-                    </div>
-                    <div class="skill-item">
-                      <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-sass"></i>
                         <i class="fab fa-css3-alt"></i>
                       </div>
                       <div class="skill-body">
-                        <h3 class="skill-title">css3 / scss</h3>
+                        <h3 class="skill-title">HTML5 / Haml / css3 / Scss</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate3"></div>
+                          <div class="rate rate4"></div>
                         </div>
-                        <p>
-                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：90h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <div class="study-title">Progate</div>
+                          <div class="study-text">
+                            ・HTML,CSSコース<br />
+                            ・Sassコース<br />
+                          </div>       
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・はじめてのHTML (全14回)<br />
+                            ・はじめてのCSS (全15回)<br />
+                            ・詳解HTML 基礎文法編 (全22回) <br>	
+                            ・詳解HTML フォーム部品編 (全8回) <br>	
+                            ・詳解CSS 基礎文法編 (全33回) <br>	
+                            ・詳解CSS セレクター編 (全12回) <br>	
+                            ・詳解CSS フレックスボックス編 (全16回) <br>	
+                            ・詳解CSS アニメーション編 (全20回) <br>	
+                            ・詳解CSS レスポンシブウェブデザイン編 (全8回) <br>	
+                            ・詳解CSS グリッドレイアウト編 (全16回) <br>	
+                            ・詳解CSS 変数編 (全7回) <br>
+                            ・実践！アプリ紹介ページを作ろう (全16回）<br />
+                            ・Sass/SCSS入門 (全15回)<br />
+                            ・Haml入門 (全8回) <br />
+                          </div>
+                          <!-- <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得<br />
+                          </div> -->
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・基礎カリキュラム／HTML5 / CSS3 (14時間)<br />
+                            ・応用カリキュラム／Haml / Sass (33時間)<br />
+                            ・実践でのアプリ開発×３<br />
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- js -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-js-square"></i>
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">JavaScript / jQuery</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate3"></div>
+                          <div class="rate rate4"></div>
                         </div>
-                        <p>
-                          ・「Progate（JavaScript+jQuery）コース」の習得。
-                          ・「ドットインストール(はじめてのJavaScript)」の習得。
-                          ・「ドットインストール(詳解JavaScript基礎文法編)」の習得。
-                          ・「ドットインストール(詳解JavaScriptオブジェクト編)」の習得。
-                          ・「ドットインストール(JavaScriptでおみくじを作ろう)」の習得。
-                          ・「ドットインストール(JavaScriptでビンゴシートを作ろう)」の習得。
-                          ・「ドットインストール(JavaScriptでスロットマシンを作ろう)」の習得。
-                          ・「ドットインストール(JavaScriptでモーダルウィンドウを作ろう)」の習得。
-                          ・「ドットインストール(JavaScriptでローディングアイコンを作ろう)」の習得。
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：290h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <div class="study-title">Progate</div>
+                          <div class="study-text">
+                            ・JavaScriptコース<br/>
+                            ・jQueryコース<br/>
+                          </div>       
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・はじめてのJavaScript (全11回)<br />
+                            ・詳解JavaScript基礎文法編(全26回)<br />
+                            ・詳解JavaScriptオブジェクト編(全35回)<br />
+                            ・詳解JavaScript DOM編 (全21回) <br />
+                            ・JavaScriptでおみくじを作ろう (全9回)<br />
+                            ・JavaScriptでストップウォッチを作ろう (全12回) <br />
+                            ・JavaScriptでタイピングゲームを作ろう (全15回) <br />
+                            ・JavaScriptで三択クイズを作ろう (全20回) <br />
+                            ・JavaScriptでスロットマシンを作ろう (全13回) <br />
+                            ・JavaScriptで数字タッチゲームを作ろう (全18回) <br />
+                            ・JavaScriptでスライドショーを作ろう (全13回) <br />
+                            ・jQuery入門 (全20回)<br />
+                          </div>
+                          <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・JavaScriptの動作を論理的に解説！JavaScript中級者への道<br>
+                            ・これからはじめる人のJavaScript/Vue.jsの教科書<br>
+                            ・JavaScript(ES6)/Vue.js/TypeScript フロントエンド技術入門<br>
+                          </div>
+                          <div class="study-title">書籍</div>
+                          <div class="study-text">
+                            ・JQuery 最高の教科書<br>
+                            ・【JavaScript＆CSS】ガチで学びたい人のためのWEB開発徹底実践（フロントエンド編）<br>
+                            ・JavaScript(ES6)/Vue.js/TypeScript フロントエンド技術入門<br>
+                          </div>
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・応用カリキュラム／JavaScriptとjQuery 6時間<br />
+                            ・応用カリキュラム／非同期通信 20時間<br />
+                            ・実践でのアプリ開発×３
+                          </div>
+                        </div> 
                       </div>
                     </div>
+                    <!-- Ruby -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
-                        <i class="far fa-gem"></i>
+                        <!-- <i class="far fa-gem"></i> -->
+                        <i class="fab fa-sketch"></i>
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">Ruby / Rails</h3>
-                        <!-- <i class="fas fa-gem"></i> -->
                         <div class="skill-rating rating">
                           <div class="rate rate4"></div>
                         </div>
-                        <p>
-                          Ruby ・「Progate（Ruby）コース」の習得。
-                          ・「ドットインストール（Ruby入門）」の習得。 Ruby on
-                          Rails ・「Progate（Ruby on Rails）」の習得。
-                          ・「ドットインストール（Ruby on Rails5入門）」の習得。
-                          ・ポートフォリオの作成。
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：300h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <div class="study-title">Progate</div>
+                          <div class="study-text">
+                            ・Rubyコース<br/>
+                            ・Ruby on Rails5コース<br/>
+                          </div>       
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・Ruby入門 (全26回)<br />
+                            ・Ruby on Rails 5入門 (全28回)<br />
+                          </div>
+                          <!-- <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得<br />
+                          </div> -->
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・基礎カリキュラム／Ruby（12時間）<br />
+                            ・基礎カリキュラム／Ruby on Rails（13時間）<br />
+                            ・応用カリキュラム／Ruby on Rails（15時間）<br />
+                            ・実践でのアプリ開発×4<br />
+                          </div>
+                        </div>
                       </div>
                     </div>
-
+                    <!-- GitHub -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-github"></i>
-                        <!-- <i class="fab fa-github-square"></i> -->
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">GitHub</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate4"></div>
+                          <div class="rate rate3"></div>
                         </div>
-                        <p>・「Progate（Git）」の習得。</p>
+                       <div class="skill-text study-time">
+                        <p>学習時間：120h〜</p>
+                      </div>
+                      <div class="skill-text">
+                        <div class="study-title">Progate</div>
+                        <div class="study-text">
+                        ・Gitコース<br/>
+                        </div>       
+                        <!-- <div class="study-title">ドットインストール</div>
+                        <div class="study-text">
+                          ・はじめてのJavaScript<br />
+                          ・詳解JavaScript基礎文法編<br />
+                          ・JavaScriptでローディングアイコンを作ろう<br />
+                        </div> -->
+                        <div class="study-title">Udemy</div>
+                        <div class="study-text">
+                          ・Git：はじめてのGitとGitHub <br />
+                        </div>
+                        <div class="study-title">TEHC::CAMP</div>
+                        <div class="study-text">
+                          ・応用カリキュラム／GitとGitHub（5時間）<br>
+                          ・実践／アプリ開発×2<br />
+                          ・チーム開発／フリマアプリ開発（一ヶ月）<br>
+                        </div>
+                        <div class="study-title">勉強会参加</div>
+                        <div class="study-text">
+                          ・GitとGitHub実践／コンフリクト解消<br>
+                        </div>
+                      </div>
                       </div>
                     </div>
+                    <!-- DB -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fas fa-database"></i>
-                        <!-- <i class="fab fa-github-square"></i> -->
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">DB</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate4"></div>
+                          <div class="rate rate2"></div>
                         </div>
-                        <p>・「Progate（SQL）コース」の習得。</p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：55h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <div class="study-title">Progate</div>
+                          <div class="study-text">
+                          ・SQLコース<br/>
+                          </div>       
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・MySQL入門 (全36回) <br />
+                          </div>
+                          <!-- <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得<br />
+                          </div> -->
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・応用カリキュラム／データベースの設計（8時間）<br />
+                            ・応用カリキュラム／SQL（11時間）<br />
+                            ・アプリ開発でのDB設計×３<br />
+                          </div>
+                        </div>
                       </div>
                     </div>
-
+                    <!-- AWS -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-aws"></i>
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">AWS</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate3"></div>
+                          <div class="rate rate1"></div>
                         </div>
-                        <p>
-                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：100h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <!-- <div class="study-title">Progate</div>
+                          <div class="study-text">
+                          （JavaScript+jQuery）コース<br/>
+                          </div>        -->
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・はじめてのJavaScript<br />
+                            ・詳解JavaScript基礎文法編<br />
+                            ・JavaScriptでローディングアイコンを作ろう<br />
+                          </div>
+                          <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得<br />
+                          </div>
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・応用カリキュラム／Linux、SSH（2時間）<br />
+                            ・応用カリキュラム／クラウド基礎（15時間）<br />
+                            ・アプリ開発でのデプロイ×２<br />
+                          </div>
+                        </div>
                       </div>
                     </div>
-
+                    <!-- Vue.js -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-vuejs"></i>
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">Veu.js</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate3"></div>
+                          <div class="rate rate1"></div>
                         </div>
-                        <p>
-                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：28h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <!-- <div class="study-title">Progate</div>
+                          <div class="study-text">
+                          （JavaScript+jQuery）コース<br/>
+                          </div>        -->
+                          <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・Vue.js入門 (全17回) <br />
+                          </div>
+                          <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・超Vue.js 完全パック - もう他の教材は買わなくてOK！ (Vue Router, Vuex含む)<br />
+                            ・Vue JS入門決定版！jQuery を使わない Web 開発 - 導入からアプリケーション開発まで体系的に動画で学ぶ<br>
+                            <br>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- Docker -->
                     <div class="skill-item">
                       <div class="skill-image-wrapper">
-                        <!-- <img class="skill-image" src="img/skill/icon_skill.png" alt=""> -->
                         <i class="fab fa-docker"></i>
                       </div>
                       <div class="skill-body">
                         <h3 class="skill-title">Docker</h3>
                         <div class="skill-rating rating">
-                          <div class="rate rate3"></div>
+                          <div class="rate rate1"></div>
                         </div>
-                        <p>
-                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                        <div class="skill-text study-time">
+                          <p>学習時間：24h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <!-- <div class="study-title">Progate</div>
+                          <div class="study-text">
+                          （JavaScript+jQuery）コース<br/>
+                          </div>        -->
+                          <!-- <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・Vue.js入門 (全17回) <br />
+                          </div> -->
+                          <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・<br />
+                          </div>
+                          <div class="study-title">勉強会参加</div>
+                        <div class="study-text">
+                          ・Docker基礎<br>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="skill-item">
+                      <div class="skill-image-wrapper">
+                      </div>
+                      <div class="skill-body">
+                        <h3 class="skill-title">その他</h3>
+                        <div class="skill-rating rating">
+                          <div class="rate rate2"></div>
+                        </div>
+                        <div class="skill-text study-time">
+                          <p>学習時間：45h〜</p>
+                        </div>
+                        <div class="skill-text">
+                          <div class="study-title">Progate</div>
+                          <div class="study-text">
+                          ・Command Lineコース<br/>
+                          </div>       
+                          <!-- <div class="study-title">ドットインストール</div>
+                          <div class="study-text">
+                            ・はじめてのJavaScript<br />
+                            ・詳解JavaScript基礎文法編<br />
+                            ・JavaScriptでローディングアイコンを作ろう<br />
+                          </div> -->
+                          <!-- <div class="study-title">Udemy</div>
+                          <div class="study-text">
+                            ・AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得<br />
+                          </div> -->
+                          <div class="study-title">書籍</div>
+                          <div class="study-text">
+                            ・キタミ式 基本情報技術者<br />
+                            ・<br />
+                          </div>
+                          <div class="study-title">TEHC::CAMP</div>
+                          <div class="study-text">
+                            ・CLI操作とLinuxコマンド(1時間)<br />
+                            ・Webアプリケーション基礎(3時間)<br />
+                            ・オブジェクト指向(4時間)<br />
+                            ・正規表現(3時間)<br />
+                            ・セキュリティ／XSS(3時間)<br />
+                            ・テスト／RSpec(8時間)<br />
+                            ・リファクタリング／例外処理(5時間)<br />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -747,8 +1019,6 @@
                     href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=m78.omori.haruka@gmail.com"
                     target="_blank"
                   >
-                    <!-- <img class="contact-image"
-                    src="img/contact/icon_contact.png" alt=""> -->
                     <i class="fas fa-envelope"></i>
                     <p class="contact-name">Gmail</p></a
                   >
@@ -759,8 +1029,6 @@
                     href="https://github.com/Sunny-flower-34"
                     target="_blank"
                   >
-                    <!-- <img class="contact-image"
-                    src="img/contact/icon_contact.png" alt=""> -->
                     <i class="fab fa-github"></i>
                     <p class="contact-name">GitHub</p>
                   </a>
@@ -776,7 +1044,6 @@
                   >
                 </li>
               </ul>
-              <!-- <div class="contact-text">m78.omori.haruka@gmail.com</div> -->
             </div>
           </div>
         </section>
@@ -785,7 +1052,7 @@
 
       <!-- .footer -->
       <footer class="footer">
-        <div id="js-page-top" class="page-top">トップへもどる</div>
+        <div id="js-page-top" class="page-top">TOP PAGE</div>
         <div class="inner">
           <p class="copyright">
             Copyright&copy;Haruka Oomori. All Rights Reserved.

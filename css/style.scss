@@ -199,6 +199,21 @@ li {
   }
 }
 
+// サイドの　2020 HARUKA'S PORTFOLIO
+.side {
+  &__font {
+    transform: rotate(90deg);
+    position: fixed;
+    right: -77px;
+    bottom: 394px;
+    font-family: "Cormorant Garamond", serif;
+    color: #0d0e0e;
+    z-index: 3;
+  }
+
+}
+
+// スクロールダウン
 .hero__footer {
   position: absolute;
   // left: 10%;
@@ -213,6 +228,7 @@ li {
 
 .hero__scrolltext {
   font-family: "Cormorant Garamond", serif;
+
   position: absolute;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -311,6 +327,13 @@ li {
   box-shadow: 0 5px 7px -3px rgba(0, 0, 0, .1);
 }
 
+// js
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
 /*--------------------------------
 小見出し
 ---------------------------------*/
@@ -346,19 +369,25 @@ About
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
-  font-family: "Cormorant Garamond", serif;
+  // font-family: "Cormorant Garamond", serif;
+  font-size: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  z-index: 2;
+  -webkit-animation: marqueeLeft 70s linear infinite;
+  animation: marqueeLeft 70s linear infinite;
+  color: transparent;
+  -webkit-text-stroke: 2px #E2E2E2;
 
   &__content {}
 }
 
 
-// js
-.fadeInUp {
-  // background-color: rgb(201, 198, 195);
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 1s;
-}
+
 
 .about-section {
   // background-color: #333;
@@ -370,7 +399,7 @@ About
     max-width: 1600px;
     // max-width: 1320px;
     margin: 0 auto;
-    padding: 80px 40px;
+    padding: 0 40px;
     background-color: #ffffff;
 
 
@@ -417,25 +446,73 @@ About
             left: 39px;
           }
 
-          .Twitter-link {
+          // .Twitter-link {
+          //   position: absolute;
+          //   bottom: 40px;
+          //   right: 20px;
+          //   color: rgb(255, 255, 255);
+          //   padding: 3px 30px;
+          // }
+
+          button:hover {
+            cursor: pointer
+          }
+
+          button {
+            background: transparent;
+            background-color: rgb(203, 202, 202);
+            outline: none;
+            position: relative;
+            // border: 2px solid rgb(203, 202, 202);
+            color: rgb(109, 109, 109);
+            padding: 11px 25px;
+            overflow: hidden;
             position: absolute;
             bottom: 40px;
-            right: 20px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(203, 202, 202);
-            padding: 3px 30px;
+            right: 140px;
+          }
+
+          /*button:before (attr data-hover)*/
+          button:hover:before {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
+
+          button:before {
+            content: attr(data-hover);
+            position: absolute;
+            top: 1.1em;
+            left: 0;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 800;
+            font-size: .8em;
+            opacity: 0;
+            transform: translate(-100%, 0);
+            transition: all .3s ease-in-out;
+          }
+
+          /*button div (button text before hover)*/
+          button:hover div {
+            opacity: 0;
+            transform: translate(100%, 0)
+          }
+
+          button div {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 800;
+            font-size: .8em;
+            transition: all .3s ease-in-out;
           }
         }
       }
 
       &__data {
         margin-left: 50px;
-        // background-color: rgb(163, 158, 158);
-        // display: 3;
-        // margin: 20px;
         box-sizing: border-box;
 
-        // width: 90%;
         dl {
           margin: 40px 0;
 
@@ -692,8 +769,8 @@ About
 
       .Fleam {
         position: absolute;
-        right: 10px;
-        bottom: -87px;
+        right: -2px;
+        bottom: -93px;
 
       }
     }
@@ -701,7 +778,6 @@ About
     // 説明文.共通
     .feature__body {
       background-color: #f7e8e8;
-
       width: 1000px;
       box-sizing: border-box;
 
@@ -751,7 +827,7 @@ About
     height: 800px;
 
     .body1 {
-      padding: 80px 100px 80px 190px;
+      padding: 30px 100px 80px 190px;
       position: absolute;
       right: 0;
       top: 60px;
@@ -766,7 +842,7 @@ About
     position: relative;
 
     .body2 {
-      padding: 80px 140px 80px 100px;
+      padding: 30px 140px 80px 100px;
       font-size: 13px;
     }
 
@@ -1004,12 +1080,7 @@ About
       background-color: #181a1a;
       content: "";
       display: block;
-      // opacity: 0.9;
-      // position: absolute;
-      // top: 0;
-      // bottom: 0;
       margin: auto 4px;
-      // margin-top: auto;margin-bottom: auto;
     }
 
     .type-v {
@@ -1022,20 +1093,30 @@ About
 
 
 /*--------------------------------
- Skill
+Skill
 ---------------------------------*/
 .skill-bg {
   // background-image: url("../img/IMG_2343.JPG");
 }
 
 .skill-section .inner {
-  max-width: 1000px;
-  background-color: #fff;
+  max-width: 1600px;
+  // background-color: rgb(228, 228, 228);
+  // グラデーション
+  background: linear-gradient(0deg, #fff, #f9f0ef, #fff);
   object-fit: cover;
+  padding: 60px 30px;
+
+  font-family: 'HCo Gotham', sans-serif;
 
   i {
     font-size: 40px;
   }
+}
+
+.section-lead {
+  // font-family: 'Playfair Display', serif;
+  letter-spacing: 0.14em;
 }
 
 .skill-list {
@@ -1047,29 +1128,57 @@ About
 
 .skill-item {
   display: flex;
-  flex: 0 0 46%;
+  // flex: 0 0 46%;
+  padding: 30px;
+  width: 493px;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 15px 0px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  .skill-image-wrapper {
+    flex: 0 0 60px;
+    margin-right: 15px;
+
+  }
+
+  .skill-body {
+    flex: 1;
+    // font-family: 'Playfair Display', serif;
+
+    .skill-body p:not(:last-child) {
+      margin-bottom: 20px;
+
+      .skill-title {
+        margin-bottom: 3px;
+        // font-family: "Crimson Text", serif;
+      }
+    }
+
+    .skill-text {
+      // font-family: 'Playfair Display', serif;
+      font-family: 'HCo Gotham', sans-serif;
+
+
+      .study-title {
+        font-size: 16px;
+        background-color: rgb(242, 242, 242);
+        font-weight: bold;
+        // width: 50%;
+        padding-left: 5px;
+        margin-bottom: 3px;
+      }
+
+      .study-text {
+        font-size: 13px;
+        padding-left: 5px;
+      }
+    }
+  }
 }
 
-.skill-image-wrapper {
-  flex: 0 0 60px;
-  margin-right: 20px;
-}
-
-.skill-body {
-  flex: 1;
-}
-
-.skill-body p:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.skill-title {
-  margin-bottom: 3px;
-}
-
+// 星
 .rate {
   position: relative;
   font-size: 16px;
@@ -1077,17 +1186,17 @@ About
   width: 100%;
   height: 20px;
   letter-spacing: .3em;
-}
 
-.rate:before,
-.rate:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 20px;
-  display: inline-block;
-  height: 20px;
-  content: "★★★★★";
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    content: "★★★★★";
+  }
 }
 
 .rate:before {
@@ -1119,6 +1228,8 @@ About
 .rate5:after {
   width: 100px;
 }
+
+
 
 /*--------------------------------
  Contact

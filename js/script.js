@@ -14,7 +14,6 @@ $(function () {
       {
         scrollTop: 0,
       },
-
       300
     );
     return false;
@@ -52,18 +51,6 @@ $(function () {
         animation();
       });
     });
-    // 国庫まで
-
-    // 要素fadeInUpを取得
-    // let $fadeInUp = $(".fadeInUp");
-
-    // if ($(window).scrollTop() >= offset.top) {
-    //   // $fadeInUp.addClass("qq");
-    //   // fadeInUp.fadeIn();
-    //   console.log("js");
-    // } else {
-    //   // fadeInUp.fadeOut();
-    // }
   });
 
   //ページ内スクロール
@@ -80,26 +67,13 @@ $(function () {
       {
         scrollTop: position,
       },
-
       300,
       "swing"
     );
     return false;
   });
 
-  // function Play1() {
-  //   console.log("sa");
-  //   document.getElementById("test1").play();
-  // }
-  // //一時停止
-  // function Pause1() {
-  //   document.getElementById("test1").pause();
-  // }
-  // //最初から再生
-  // function PlayFromFirst1() {
-  //   document.getElementById("test1").currentTime = 0;
-  //   document.getElementById("test1").play();
-  // }
+  // 動画再生ボタン、再生すると消える
   $(".playBtn").click(function () {
     if ($("#video1")[0].paused) {
       $("#video1")[0].play();
