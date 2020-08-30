@@ -163,6 +163,17 @@ li {
   color: #333;
 }
 
+.side__font {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: fixed;
+  right: -77px;
+  bottom: 394px;
+  font-family: "Cormorant Garamond", serif;
+  color: #0d0e0e;
+  z-index: 3;
+}
+
 .hero__footer {
   position: absolute;
   right: 20px;
@@ -292,6 +303,14 @@ li {
   box-shadow: 0 5px 7px -3px rgba(0, 0, 0, 0.1);
 }
 
+.fadeInUp {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 /*--------------------------------
 小見出し
 ---------------------------------*/
@@ -323,21 +342,24 @@ About
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
-  font-family: "Cormorant Garamond", serif;
-}
-
-.fadeInUp {
-  opacity: 0;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-transition: 1s;
-  transition: 1s;
+  font-size: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+  z-index: 2;
+  -webkit-animation: marqueeLeft 70s linear infinite;
+  animation: marqueeLeft 70s linear infinite;
+  color: transparent;
+  -webkit-text-stroke: 2px #E2E2E2;
 }
 
 .about-section .inner2 {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 80px 40px;
+  padding: 0 40px;
   background-color: #ffffff;
 }
 
@@ -374,6 +396,11 @@ About
   left: -3px;
 }
 
+.about-section .inner2 .profile__image .my-image {
+  /*button:before (attr data-hover)*/
+  /*button div (button text before hover)*/
+}
+
 .about-section .inner2 .profile__image .my-image img {
   width: 384px;
   height: 424px;
@@ -386,13 +413,59 @@ About
   left: 39px;
 }
 
-.about-section .inner2 .profile__image .my-image .Twitter-link {
+.about-section .inner2 .profile__image .my-image button:hover {
+  cursor: pointer;
+}
+
+.about-section .inner2 .profile__image .my-image button {
+  background: transparent;
+  background-color: #cbcaca;
+  outline: none;
+  position: relative;
+  color: #6d6d6d;
+  padding: 11px 25px;
+  overflow: hidden;
   position: absolute;
   bottom: 40px;
-  right: 20px;
-  color: white;
-  background-color: #cbcaca;
-  padding: 3px 30px;
+  right: 140px;
+}
+
+.about-section .inner2 .profile__image .my-image button:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.about-section .inner2 .profile__image .my-image button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.about-section .inner2 .profile__image .my-image button:hover div {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+.about-section .inner2 .profile__image .my-image button div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .about-section .inner2 .profile__data {
@@ -644,8 +717,8 @@ About
 
 .feature-body .feature .feature__item .Fleam {
   position: absolute;
-  right: 10px;
-  bottom: -87px;
+  right: -2px;
+  bottom: -93px;
 }
 
 .feature-body .feature .feature__body {
@@ -701,7 +774,7 @@ About
 }
 
 .feature-body .p-1 .body1 {
-  padding: 80px 100px 80px 190px;
+  padding: 30px 100px 80px 190px;
   position: absolute;
   right: 0;
   top: 60px;
@@ -714,7 +787,7 @@ About
 }
 
 .feature-body .p-2 .body2 {
-  padding: 80px 140px 80px 100px;
+  padding: 30px 140px 80px 100px;
   font-size: 13px;
 }
 
@@ -929,17 +1002,24 @@ About
 }
 
 /*--------------------------------
- Skill
+Skill
 ---------------------------------*/
 .skill-section .inner {
-  max-width: 1000px;
-  background-color: #fff;
+  max-width: 1600px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(#f9f0ef), to(#fff));
+  background: linear-gradient(0deg, #fff, #f9f0ef, #fff);
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 60px 30px;
+  font-family: 'HCo Gotham', sans-serif;
 }
 
 .skill-section .inner i {
   font-size: 40px;
+}
+
+.section-lead {
+  letter-spacing: 0.14em;
 }
 
 .skill-list {
@@ -958,36 +1038,54 @@ About
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 46%;
-          flex: 0 0 46%;
+  padding: 30px;
+  width: 493px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 15px 0px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.skill-image-wrapper {
+.skill-item .skill-image-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60px;
           flex: 0 0 60px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
-.skill-body {
+.skill-item .skill-body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.skill-body p:not(:last-child) {
+.skill-item .skill-body .skill-body p:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.skill-title {
+.skill-item .skill-body .skill-body p:not(:last-child) .skill-title {
   margin-bottom: 3px;
+}
+
+.skill-item .skill-body .skill-text {
+  font-family: 'HCo Gotham', sans-serif;
+}
+
+.skill-item .skill-body .skill-text .study-title {
+  font-size: 16px;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-bottom: 3px;
+}
+
+.skill-item .skill-body .skill-text .study-text {
+  font-size: 13px;
+  padding-left: 5px;
 }
 
 .rate {
@@ -999,8 +1097,7 @@ About
   letter-spacing: .3em;
 }
 
-.rate:before,
-.rate:after {
+.rate:before, .rate:after {
   position: absolute;
   top: 0;
   left: 0;
