@@ -23,9 +23,11 @@ $(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= offset.top) {
       $nav.addClass("fixed");
+      $bt.addClass("fixed2");
       $("body").css("margin-top", navHeight);
     } else {
       $nav.removeClass("fixed");
+      $bt.removeClass("fixed2");
       $("body").css("margin-top", "0");
     }
 
@@ -53,6 +55,8 @@ $(function () {
     });
   });
 
+  //ページ内スクロール
+  var $bt = $(".back-top");
   //ページ内スクロール
   var $nav = $(".gnav");
   var offset = $nav.offset();

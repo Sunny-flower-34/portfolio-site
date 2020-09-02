@@ -93,7 +93,7 @@ li {
 
 .inner {
   max-width: 1320px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 0 40px;
 }
 
@@ -169,7 +169,10 @@ li {
             font-family: "Cormorant Garamond", serif;
             // font-family: 'Amatic SC', cursive;
             // font-family: 'Niconne', cursive;
-            // font-family: 'Playfair Display SC', serif;
+            // font-size: 3.6vw;
+            // font-weight: 900;
+            // font-family: 'Playfair Display', serif;
+            // letter-spacing: 0;
             // font-family: 'Allura', cursive;
             // font-family: 'Amatic SC', cursive;
             // font-family: 'Cedarville Cursive', cursive;
@@ -199,13 +202,13 @@ li {
   }
 }
 
-// サイドの　2020 HARUKA'S PORTFOLIO
+// サイドの 2020 HARUKA'S PORTFOLIO
 .side {
   &__font {
     transform: rotate(90deg);
     position: fixed;
     right: -77px;
-    bottom: 394px;
+    bottom: 474px;
     font-family: "Cormorant Garamond", serif;
     color: #0d0e0e;
     z-index: 3;
@@ -230,7 +233,7 @@ li {
   font-family: "Cormorant Garamond", serif;
 
   position: absolute;
-  -webkit-transform: rotate(90deg);
+  // -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   color: rgba(255, 255, 255, 0.7);
   left: -35px;
@@ -275,6 +278,7 @@ li {
   border-left: 0px solid transparent;
   border-right: 8px solid transparent;
 }
+
 
 /*--------------------------------
 グローバルナビ
@@ -351,27 +355,25 @@ li {
 .subheading2 {
   // background-color: rgba(245, 226, 219, 0.797);
   background-color: #e09b9d;
+  box-shadow: 0px 30px 60px 200px #e09b9d;
   color: #fff;
   text-align: center;
   font-size: 20px;
   font-family: 'Savoye LET', serif;
-  padding-bottom: 100px;
+  margin-bottom: 77px;
+  // padding-bottom: 100px;
 }
 
-/*--------------------------------
-About
----------------------------------*/
 .roop {
   // display: flex;
   opacity: 0.5;
-  font-size: 10vw;
-  color: #ffeeee;
+  // font-size: 10vw;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
-  // font-family: "Cormorant Garamond", serif;
   font-size: 150px;
   font-family: 'Montserrat', sans-serif;
+  // font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
@@ -381,11 +383,85 @@ About
   -webkit-animation: marqueeLeft 70s linear infinite;
   animation: marqueeLeft 70s linear infinite;
   color: transparent;
-  -webkit-text-stroke: 2px #E2E2E2;
+  -webkit-text-stroke: 2px #eee;
 
-  &__content {}
+  span {
+    margin-right: 200px;
+  }
 }
 
+// PAGE TOP--→
+.back-top {
+  transform: rotate(-90deg);
+  opacity: 0;
+  font-family: "Cormorant Garamond", serif;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+  z-index: 4;
+  cursor: pointer;
+  transition: 1s;
+
+  .back-top-taxt {
+    font-weight: bold;
+  }
+}
+
+.back-top.fixed2 {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: -8px;
+  left: 86px;
+  margin-top: 26px;
+  margin-left: 20px;
+  padding-left: 82px;
+  z-index: 4;
+  animation-name: eeeww;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+
+  &:before {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 63px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 13px transparent;
+    border-top: solid 5px #646464;
+    transform: rotate(-180deg);
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: -14px;
+    width: 100%;
+    border-bottom: solid 1px #646464;
+  }
+}
+
+@keyframes eeeww {
+  0% {
+    transform: translateY(0, 0px);
+  }
+
+  100% {
+    transform: translateY(0, 20px)
+  }
+}
+
+
+/*--------------------------------
+About
+---------------------------------*/
 
 
 
@@ -413,28 +489,35 @@ About
         // background-color: rgb(165, 165, 165);
         height: 450px;
         position: relative;
+        margin-left: 30px;
+
 
 
         .back-box {
-          background-color: #e4c199d2;
-          height: 271px;
-          width: 170px;
+          background-color: #e09b9d;
+          height: 410px;
+          width: 373px;
           position: absolute;
-          bottom: 8px;
-          left: 8px;
+          bottom: 0px;
+          left: 23px;
         }
 
         .ee {
           writing-mode: vertical-rl;
           transform: rotate(-180deg);
+          font-family: "Cormorant Garamond", serif;
+          font-size: 18px;
           /* 中心を基準点に反時計回りに回転する */
           // transform: rotate(-180deg);
           position: absolute;
           bottom: 44px;
-          left: -3px;
+          left: 22px;
+          color: #ededed;
         }
 
         .my-image {
+
+          // 自分の写真
           img {
             width: 384px;
             height: 424px;
@@ -444,16 +527,10 @@ About
             position: absolute;
             bottom: 23px;
             left: 39px;
+            box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
           }
 
-          // .Twitter-link {
-          //   position: absolute;
-          //   bottom: 40px;
-          //   right: 20px;
-          //   color: rgb(255, 255, 255);
-          //   padding: 3px 30px;
-          // }
-
+          // Twitter
           button:hover {
             cursor: pointer
           }
@@ -465,11 +542,11 @@ About
             position: relative;
             // border: 2px solid rgb(203, 202, 202);
             color: rgb(109, 109, 109);
-            padding: 11px 25px;
+            padding: 16px 47px;
             overflow: hidden;
             position: absolute;
-            bottom: 40px;
-            right: 140px;
+            bottom: 48px;
+            right: 87px;
           }
 
           /*button:before (attr data-hover)*/
@@ -491,6 +568,7 @@ About
             opacity: 0;
             transform: translate(-100%, 0);
             transition: all .3s ease-in-out;
+            text-align: center;
           }
 
           /*button div (button text before hover)*/
@@ -509,6 +587,7 @@ About
         }
       }
 
+      // 名前、誕生日、出身地
       &__data {
         margin-left: 50px;
         box-sizing: border-box;
@@ -517,11 +596,17 @@ About
           margin: 40px 0;
 
           dt {
-            font-size: 30px;
-            font-family: "Cormorant Garamond", serif;
+            font-size: 43px;
+            // font-family: "Cormorant Garamond", serif;
+            // font-size: 2.6vw;
+            font-weight: 900;
+            // font-family: 'Playfair Display', serif;
+            font-family: 'Yeseva One', cursive;
+            letter-spacing: 0;
           }
 
           dd {
+            font-family: 'Yeseva One', cursive;
             margin-bottom: 30px;
             font-size: 25px;
           }
@@ -762,7 +847,7 @@ About
 
       .Encounter {
         position: absolute;
-        left: 609px;
+        left: 434px;
         /* right: 10px; */
         bottom: 188px;
       }
@@ -824,10 +909,11 @@ About
     width: 95%;
     position: relative;
     margin-left: 100px;
+    margin-bottom: 690px;
     height: 800px;
 
     .body1 {
-      padding: 30px 100px 80px 190px;
+      padding: 30px 83px 80px 158px;
       position: absolute;
       right: 0;
       top: 60px;
@@ -838,17 +924,20 @@ About
   }
 
   .p-2 {
-    margin-top: 150px;
+    margin-top: 890px;
     position: relative;
+    width: 95%;
 
     .body2 {
-      padding: 30px 140px 80px 100px;
+      padding: 30px 158px 80px 83px;
       font-size: 13px;
+      // margin-top: 300px;
     }
 
+    // フリマ動画の位置
     .item2 {
       position: absolute;
-      right: 90px;
+      right: 0px;
       top: -60px;
     }
   }
@@ -895,19 +984,27 @@ About
 .works-list {
   .works {
     display: flex;
-    margin: 200px;
+    margin: 100px 200px;
     position: relative;
   }
 
   .works2 {
     display: flex;
-    margin: 44px 0px 90px 0px;
+    // margin-top: 144px;
+    position: relative;
+  }
+
+  .works3 {
+    display: flex;
+    margin: 60px 200px 300px 200px;
     position: relative;
   }
 
   .works-item {
     position: relative;
 
+    // ChatSpase
+    // Pictweet
     .video2 {
       width: 590px;
       padding: 1px;
@@ -1007,54 +1104,56 @@ About
 
   }
 
+  // ChatSpase
   .works-body {
-    padding: 60px 60px 60px 120px;
+    padding: 30px 60px 60px 90px;
     background-color: #f7e8e8;
-    width: 600px;
-    height: 350px;
-
-    .works-text {
-      font-size: 10px;
-    }
-  }
-
-  // 真ん中左右逆に
-  .works-body2 {
-    margin: 80px 0 30px 367px;
-    // padding: 100px;
-    padding: 60px 120px 60px 80px;
-    background-color: #f7e8e8;
-    width: 600px;
-    height: 350px;
-
-    .works-text {
-      font-size: 10px;
-    }
+    width: 700px;
+    height: 528px;
   }
 
   .w-b1 {
     position: absolute;
     top: 35px;
-    right: 223px;
+    right: 106px;
     z-index: -1;
   }
 
-  .w-b2 {}
 
-  .w-b3 {
-    position: absolute;
-    top: 35px;
-    right: 224px;
-    z-index: -1;
+  // PicTweet
+  .works-body2 {
+    padding: 30px 100px 60px 60px;
+    margin: 247px 0 30px 284px;
+    background-color: #f7e8e8;
+    width: 750px;
+    height: 530px;
   }
 
   .child2 {
     position: absolute;
-    top: 45px;
-    right: 233px;
+    top: 189px;
+    right: 181px;
   }
+
+  // ポートフォリオサイト
+  .works-body3 {
+    padding: 30px 60px 60px 90px;
+    background-color: #f7e8e8;
+    width: 750px;
+    height: 429px;
+  }
+
+  .w-b3 {
+    position: absolute;
+    top: 35px;
+    right: 60px;
+    z-index: -1;
+  }
+
+
 }
 
+// portflio--------04
 .portfolio-title2 {
   display: flex;
   font-family: "Crimson Text", serif;
@@ -1084,13 +1183,56 @@ About
     }
 
     .type-v {
-      font-size: 40px;
+      font-size: 30px;
       opacity: 1;
       transform: matrix(1, 0, 0, 1, 0, 0);
+      padding-top: 10px;
     }
   }
 }
 
+// 説明文
+.works-text {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 2px 3px 2px 5px;
+  border-radius: 3px;
+  line-height: 22px;
+
+  .text-title {
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1.3;
+  }
+
+  .text-body {
+    flex: 6;
+
+  }
+}
+
+// 大変だった事（長文）
+
+.works-text2 {
+  padding: 8px 7px 8px 5px;
+  background-color: #fff;
+  border-radius: 3px;
+  display: flex;
+  margin-bottom: 13px;
+
+  .text-title2 {
+    font-size: 16px;
+    font-weight: bold;
+    flex: .8;
+  }
+
+  .text-body2 {
+    // font-size: 12px;
+    flex: 4;
+
+  }
+}
 
 /*--------------------------------
 Skill
@@ -1102,7 +1244,7 @@ Skill
 .skill-section .inner {
   max-width: 1600px;
   // background-color: rgb(228, 228, 228);
-  // グラデーション
+  // グラデーション背景
   background: linear-gradient(0deg, #fff, #f9f0ef, #fff);
   object-fit: cover;
   padding: 60px 30px;
@@ -1117,6 +1259,9 @@ Skill
 .section-lead {
   // font-family: 'Playfair Display', serif;
   letter-spacing: 0.14em;
+  background-size: cover;
+  opacity: .8;
+  font-size: 20px;
 }
 
 .skill-list {
@@ -1293,10 +1438,12 @@ Skill
 ---------------------------------*/
 .footer {
   background-color: #333;
+  max-width: 100vw;
 }
 
-.footer .inner {
+.footer .inner4 {
   padding: 30px;
+  margin: 0px auto;
 }
 
 .copyright {
