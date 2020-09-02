@@ -110,8 +110,8 @@ li {
   height: 100vh;
 
   // background-image: url("../img/IMG_4724.jpg");
-  // background-image: url("../img/IMG_2314.jpg");
-  background-image: url("../img/IMG_2302JPG");
+  background-image: url("../img/IMG_2314.jpg");
+  // background-image: url("../img/IMG_2302JPG");
   background-size: cover;
 
   .header2 {
@@ -220,8 +220,8 @@ li {
 .hero__footer {
   position: absolute;
   // left: 10%;
-  right: 20px;
-  bottom: 30px;
+  right: 4px;
+  bottom: 45px;
   // -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 2;
@@ -236,9 +236,10 @@ li {
   // -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   color: rgba(255, 255, 255, 0.7);
-  left: -35px;
+  left: -45px;
   top: -5px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 @keyframes eee {
@@ -247,7 +248,7 @@ li {
   }
 
   100% {
-    transform: translate(0, -20px)
+    transform: translate(0, -30px)
   }
 }
 
@@ -850,6 +851,10 @@ About
         left: 434px;
         /* right: 10px; */
         bottom: 188px;
+
+        .d {
+          font-size: 10px;
+        }
       }
 
       .Fleam {
