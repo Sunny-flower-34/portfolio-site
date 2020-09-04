@@ -27,6 +27,9 @@ Things you may want to cover:
 
 [![Image from Gyazo](https://gyazo.com/74f50067969aae391765ece616219356)](https://gyazo.com/74f50067969aae391765ece616219356)
 
+https://i.gyazo.com/74f50067969aae391765ece616219356.gif
+![74f50067969aae391765ece616219356](https://user-images.githubusercontent.com/66055547/92200237-4b1df580-eeb4-11ea-8830-ff925abb4d64.gif)
+
 自己紹介 / 成果物一覧 / 学習推移 / お問い合わせ
 
 ## 開発環境
