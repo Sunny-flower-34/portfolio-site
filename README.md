@@ -31,12 +31,12 @@ Things you may want to cover:
 
 ## 開発環境
 
-Netlify
-HTML5
-SCSS
-JavaScript
-jQuery
-GitHub
+Netlify<br />
+HTML5<br />
+SCSS<br />
+JavaScript<br />
+jQuery<br />
+GitHub<br />
 
 ## 学べた事
 
@@ -47,7 +47,7 @@ GitHub
 
 ## 本番環境
 
-netlify を用いてデプロイ済み。
+netlify を用いてデプロイ済み。<br>
 IP：https://elated-goodall-8bdb67.netlify.app/
 
 ## 著者
