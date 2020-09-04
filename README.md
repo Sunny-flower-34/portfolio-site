@@ -25,7 +25,7 @@ Things you may want to cover:
 
 ## 概要
 
-[![Image from Gyazo](https://gyazo.com/74f50067969aae391765ece616219356)](https://gyazo.com/74f50067969aae391765ece616219356)
+[![Image from Gyazo](https://i.gyazo.com/74f50067969aae391765ece616219356.gif)](https://gyazo.com/74f50067969aae391765ece616219356)
 
 自己紹介 / 成果物一覧 / 学習推移 / お問い合わせ
 
