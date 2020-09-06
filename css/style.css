@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .8px;
@@ -81,7 +81,7 @@ li {
 }
 
 .section {
-  padding: 80px 0;
+  padding-bottom: 80px;
 }
 
 .inner {
@@ -190,7 +190,6 @@ li {
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: rgba(255, 255, 255, 0.7);
   left: -45px;
   top: -5px;
   font-size: 17px;
@@ -225,7 +224,7 @@ li {
   left: -0.5rem;
   width: 0px;
   height: 9rem;
-  border: 0.8px solid #ffffff;
+  border: 0.8px solid #0d0e0e;
   -webkit-animation-name: eee;
           animation-name: eee;
   -webkit-animation-timing-function: ease-in-out;
@@ -246,7 +245,7 @@ li {
   left: -2px;
   width: 1px;
   height: 10px;
-  border-top: 12px solid #ffffff;
+  border-top: 12px solid #0d0e0e;
   border-left: 0px solid transparent;
   border-right: 8px solid transparent;
 }
@@ -450,7 +449,7 @@ About
 ---------------------------------*/
 .about-section .inner2 {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 0 40px;
   background-color: #ffffff;
 }
@@ -537,7 +536,7 @@ About
 .about-section .inner2 .profile__image .my-image button:before {
   content: attr(data-hover);
   position: absolute;
-  top: 1.1em;
+  top: 16px;
   left: 0;
   width: 100%;
   text-transform: uppercase;
@@ -755,12 +754,26 @@ About
   font-family: Playfair Display, Noto Serif JP, serif;
   position: absolute;
   left: 11px;
-  top: 492.7px;
+  top: 450px;
+}
+
+.feature-body .feature .feature__item .feature-title .salon {
+  position: absolute;
+  top: 65px;
+  left: 162px;
 }
 
 .feature-body .feature .feature__item .feature-title .Ex {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.feature-body .feature .feature__item .feature-title .Ex2 {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 172px;
+  left: 0px;
 }
 
 .feature-body .feature .feature__item .feature-url {
@@ -813,8 +826,7 @@ About
 .feature-body .feature .feature__item .Encounter {
   position: absolute;
   left: 434px;
-  /* right: 10px; */
-  bottom: 188px;
+  bottom: 210px;
 }
 
 .feature-body .feature .feature__item .Encounter .d {

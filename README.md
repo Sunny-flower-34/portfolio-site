@@ -25,7 +25,7 @@ Things you may want to cover:
 
 ## 概要
 
-私の自己紹介サイトです。（URL は下記に記載）
+私の自己紹介サイトです。（URL は下記に記載）<br>
 自己紹介 / 成果物一覧 / 学習推移 / お問い合わせ
 ![74f50067969aae391765ece616219356](https://user-images.githubusercontent.com/66055547/92200237-4b1df580-eeb4-11ea-8830-ff925abb4d64.gif)
 
@@ -47,7 +47,7 @@ GitHub<br />
 
 ## 本番環境
 
-netlify を用いてデプロイ済み。<br>
+netlify を用いてデプロイ済み<br>
 IP：https://elated-goodall-8bdb67.netlify.app/
 
 ## 著者
