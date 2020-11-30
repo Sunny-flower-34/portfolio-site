@@ -1,398 +1,1081 @@
 // small screen
 /*media Queries スマホ
 ----------------------------------------------------*/
+@media screen and (min-width:0px) and (max-width:767px) {
 
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
 
-// .sp-only {
-//   display: none;
-// }
+  // .sp-only {
+  //   display: none;
+  // }
 
-// js 下からフワッと
-.fadeInUp {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 1s;
-}
+  // js 下からフワッと
+  .fadeInUp {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+  }
 
-.header {
-  width: 100vw;
-  height: 100vh;
-  // background-image: url("../img/IMG_4724.jpg");
-  // background-image: url("../img/IMG_2302JPG");
-  background-image: url("../img/IMG_2314.jpg");
-  background-size: cover;
+  .header {
+    width: 100vw;
+    height: 100vh;
+    // background-image: url("../img/IMG_4724.jpg");
+    // background-image: url("../img/IMG_2302JPG");
+    background-image: url("../img/IMG_2314.jpg");
+    background-size: cover;
 
-  .header2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(57, 57, 57, 0.253);
-    width: 100%;
-    height: 100%;
+    .header2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(57, 57, 57, 0.253);
+      width: 100%;
+      height: 100%;
 
-    .logo {
-      text-align: center;
-      margin: 0 auto;
+      .logo {
+        text-align: center;
+        margin: 0 auto;
 
-      .logo-border1 {
-        border: 2px solid #fff;
-        padding: 10px;
-
-        .logo-border2 {
+        .logo-border1 {
+          border: 2px solid #fff;
           padding: 10px;
 
-          .logo-border3 {
-            // padding: 10px;
-            background-color: rgba(246, 246, 246, 0.639);
-            padding: 30px;
-          }
+          .logo-border2 {
+            padding: 10px;
 
-          .logo-name {
-            font-family: 'Homemade Apple', cursive;
-            font-size: 12px;
-            line-height: 1;
-            display: block;
-            margin-bottom: 5px;
-            text-align: center;
-            color: #333;
+            .logo-border3 {
+              // padding: 10px;
+              background-color: rgba(246, 246, 246, 0.639);
+              padding: 30px;
+            }
 
-          }
+            .logo-name {
+              font-family: 'Homemade Apple', cursive;
+              font-size: 12px;
+              line-height: 1;
+              display: block;
+              margin-bottom: 5px;
+              text-align: center;
+              color: #333;
 
-          .logo-title {
-            font-family: "Cormorant Garamond", serif;
-            font-size: 20px;
-            font-weight: normal;
-            line-height: 1;
-            display: block;
-            letter-spacing: .1em;
-            color: #333;
+            }
 
-          }
+            .logo-title {
+              font-family: "Cormorant Garamond", serif;
+              font-size: 20px;
+              font-weight: normal;
+              line-height: 1;
+              display: block;
+              letter-spacing: .1em;
+              color: #333;
 
-          .logo-text {
-            font-size: 10px;
-            display: block;
-            margin-top: 10px;
-            text-align: center;
-            letter-spacing: .2em;
-            color: #333;
+            }
+
+            .logo-text {
+              font-size: 10px;
+              display: block;
+              margin-top: 10px;
+              text-align: center;
+              letter-spacing: .2em;
+              color: #333;
+            }
           }
         }
       }
     }
   }
-}
 
-// サイドの 2020 HARUKA'S PORTFOLIO
-.side {
-  &__font {
-    transform: rotate(90deg);
-    position: fixed;
-    right: -51px;
-    bottom: 75px;
-    font-family: "Cormorant Garamond", serif;
-    color: #0d0e0e;
-    z-index: 3;
-    font-size: 10px;
+  // サイドの 2020 HARUKA'S PORTFOLIO
+  .side {
+    &__font {
+      transform: rotate(90deg);
+      position: fixed;
+      right: -51px;
+      bottom: 75px;
+      font-family: "Cormorant Garamond", serif;
+      color: #0d0e0e;
+      z-index: 3;
+      font-size: 10px;
+    }
   }
-}
 
-.hero__footer {
-  // display: none;
-}
+  .hero__footer {
+    // display: none;
+  }
 
-/*--------------------------------
+  /*--------------------------------
 グローバルナビ スマホ
 ---------------------------------*/
-.gnav {
-  // display: none;
-}
+  .gnav {
+    display: none;
+  }
 
-.back-top {
-  // display: none;
-}
+  .back-top {
+    display: none;
+  }
 
-/*--------------------------------
+  /*--------------------------------
 小見出し スマホ
 ---------------------------------*/
-.subheading {
-  padding-top: 50px;
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Savoye LET', serif;
-  background-color: #e09b9d;
-  color: #fff;
-}
-
-.subheading2 {
-  background-color: #e09b9d;
-  box-shadow: 0px 30px 60px 100px #e09b9d;
-  color: #fff;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'Savoye LET', serif;
-  margin-bottom: 77px;
-}
-
-// 横からループ文字 ABOUTなど
-.roop {
-  opacity: 0.5;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
-  letter-spacing: -0.02em;
-  z-index: 2;
-  -webkit-animation: marqueeLeft 70s linear infinite;
-  animation: marqueeLeft 70s linear infinite;
-  color: transparent;
-  -webkit-text-stroke: 2px #eee;
-
-  span {
-    margin-right: 200px;
+  .subheading {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Savoye LET', serif;
+    background-color: #e09b9d;
+    color: #fff;
   }
-}
+
+  .subheading2 {
+    background-color: #e09b9d;
+    box-shadow: 0px 30px 60px 100px #e09b9d;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Savoye LET', serif;
+    margin-bottom: 77px;
+  }
+
+  // 横からループ文字 ABOUTなど
+  .roop {
+    opacity: 0.5;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    z-index: 2;
+    -webkit-animation: marqueeLeft 70s linear infinite;
+    animation: marqueeLeft 70s linear infinite;
+    color: transparent;
+    -webkit-text-stroke: 2px #eee;
+
+    span {
+      margin-right: 200px;
+    }
+  }
 
 
 
-/*--------------------------------
+  /*--------------------------------
 About スマホ
 ---------------------------------*/
+  .about-section {
 
-.about-section {
+    .inner2 {
+      max-width: 90%;
+      margin: 60px auto;
+      background-color: #ffffff;
 
-  .inner2 {
-    max-width: 90%;
-    margin: 60px auto;
-    background-color: #ffffff;
+      .profile {
 
-    .profile {
+        &__image {
 
-      &__image {
+          .ee {}
 
-        .ee {
-          // display: none;
+          .my-image {
+
+            // 自分の写真
+            img {
+              width: 100%;
+              height: 324px;
+              border-radius: 10%;
+              object-fit: cover;
+              margin: 0 auto;
+              box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+            }
+
+            button div {
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              font-weight: 800;
+              font-size: .8em;
+              transition: all .3s ease-in-out;
+            }
+          }
         }
 
-        .my-image {
+        // 名前、誕生日、出身地
+        &__data {
+          margin: 0 auto;
+          box-sizing: border-box;
 
-          // 自分の写真
-          img {
-            width: 100%;
-            height: 324px;
-            border-radius: 10%;
-            object-fit: cover;
-            margin: 0 auto;
-            box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+          dl {
+            margin: 20px;
+            text-align: center;
+
+            dt {
+              font-size: 23px;
+              // font-size: 2.6vw;
+              font-weight: 700;
+              // font-family: 'Playfair Display', serif;
+              font-family: 'Yeseva One', cursive;
+              letter-spacing: 0;
+            }
+
+            dd {
+              margin-top: 5px;
+              font-family: 'Yeseva One', cursive;
+              margin-bottom: 30px;
+              font-size: 15px;
+            }
           }
 
-          button div {
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 800;
-            font-size: .8em;
-            transition: all .3s ease-in-out;
-          }
         }
       }
 
-      // 名前、誕生日、出身地
-      &__data {
-        margin: 0 auto;
-        box-sizing: border-box;
 
-        dl {
-          margin: 20px;
+
+      .about {
+        margin-top: 15px;
+
+        &__item {
+          padding: 15px 17px;
+          background-color: rgb(203, 202, 202);
           text-align: center;
 
-          dt {
-            font-size: 23px;
-            // font-family: "Cormorant Garamond", serif;
-            // font-size: 2.6vw;
-            font-weight: 700;
-            // font-family: 'Playfair Display', serif;
-            font-family: 'Yeseva One', cursive;
-            letter-spacing: 0;
-          }
+          .data {
+            dt {
+              margin: 15px 0;
+            }
 
-          dd {
-            margin-top: 5px;
-            font-family: 'Yeseva One', cursive;
-            margin-bottom: 30px;
-            font-size: 15px;
+            dd {
+              margin-bottom: 40px;
+
+              p {
+                margin: 5px;
+                font-size: 15px;
+
+                i {
+                  font-size: 18px;
+                }
+
+                .fa {
+                  margin: 0 4px;
+                }
+
+                span {
+                  margin-left: 5px;
+                }
+              }
+            }
+
+            &__title {
+              background-color: #decfcffc;
+              position: relative;
+              width: 100%;
+              height: 26px;
+
+              .w-boder {
+                border: 1px solid rgb(255, 255, 255);
+                position: absolute;
+                bottom: 10px;
+                width: 103%;
+                height: 100%;
+              }
+
+              .con {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: -12px;
+                font-size: 37px;
+                font-family: 'Savoye LET', serif;
+              }
+            }
           }
         }
 
-      }
-    }
+        &__body {
+          margin-top: 20px;
+          background-color: rgb(255, 255, 255);
+          padding: 15px 17px;
+          text-align: center;
 
+          .data2 {
+            dt {
+              margin: 20px 0;
+            }
 
+            dd {
+              margin-bottom: 10px;
 
-    .about {
-      // display: flex;
-      margin-top: 15px;
+              p {
+                margin: 5px;
+                font-size: 15px;
+              }
+            }
 
-      &__item {
-        // flex: 1;
-        padding: 15px 17px;
-        background-color: rgb(203, 202, 202);
-        text-align: center;
+            &__title {
+              background-color: #f7e8e8;
+              position: relative;
+              width: 100%;
+              height: 26px;
 
-        .data {
-          dt {
-            margin: 15px 0;
-          }
-
-          dd {
-            margin-bottom: 40px;
-
-            p {
-              margin: 5px;
-              font-size: 15px;
-
-              i {
-                font-size: 18px;
+              .w-boder {
+                border: 1px solid rgb(198, 198, 198);
+                position: absolute;
+                bottom: 10px;
+                width: 103%;
+                height: 100%;
               }
 
-              .fa {
-                margin: 0 4px;
+              .con {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: -12px;
+                top: 9px;
+                font-size: 37px;
+                font-family: 'Savoye LET', serif;
+              }
+
+            }
+
+            .target {
+              padding: 2px;
+
+              .term {
+                box-sizing: border-box;
+                box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
+                padding: 8px;
+                margin: 5px 0;
+
+                &__title {
+                  text-align: center;
+                  padding: 5px 0;
+                  border-bottom: 1px solid;
+                  font-size: 15px;
+                }
+
+                &__text {
+                  padding: 5px 0;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*--------------------------------
+  Feature スマホ
+---------------------------------*/
+  .inner3 {
+    .feature-body {
+      .feature {
+        // margin-top: 100px;
+        // display: flex;
+
+        // 動画１、共通
+        .feature__item {
+          .video1 {
+            width: 100%;
+            // padding: 1px;
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+          }
+
+          .feature-title {
+            font-size: 23px;
+            // font-weight: bold;
+            letter-spacing: .05em;
+            font-family: Playfair Display, Noto Serif JP, serif;
+            // position: absolute;
+            // left: 11px;
+            // top: 450px;
+
+            .salon {
+              // position: absolute;
+              // top: 65px;
+              // left: 162px;
+            }
+
+            .Ex {
+              font-size: 14px;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .Ex2 {
+              font-size: 14px;
+              font-family: Arial, Helvetica, sans-serif;
+              // position: absolute;
+              // top: 172px;
+              // left: 0px;
+            }
+          }
+
+          .feature-url {
+            font-family: Playfair Display, Noto Serif JP, serif;
+            font-size: 10px;
+            // display: flex;
+
+            a {
+              -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+              -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+              -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+              -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+              transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+              display: block;
+              margin: 10px 5px;
+              max-width: 100px;
+              text-decoration: none;
+              border-radius: 4px;
+              // padding: 10px 10px;
+            }
+
+            a.button {
+              color: rgba(30, 22, 54, 0.6);
+              box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+
+              &:hover {
+                color: rgba(255, 255, 255, 0.85);
+                box-shadow: #ee76ad 0 0px 0px 40px inset;
               }
 
               span {
-                margin-left: 5px;
+                margin-left: 3px;
+              }
+            }
+
+            a.button2 {
+              color: rgba(30, 22, 54, 0.6);
+              box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+
+              &:hover {
+                color: rgba(255, 255, 255, 0.85);
+                box-shadow: #ee76ad 0 80px 0px 2px inset;
               }
             }
           }
 
-          &__title {
-            background-color: #decfcffc;
-            position: relative;
-            width: 100%;
-            height: 26px;
+          // .Encounter {
+          //   position: absolute;
+          //   left: 434px;
+          //   bottom: 210px;
 
-            .w-boder {
-              border: 1px solid rgb(255, 255, 255);
-              position: absolute;
-              bottom: 10px;
-              width: 103%;
-              height: 100%;
+          .d {
+            font-size: 10px;
+          }
+        }
+
+        .Fleam {
+          // position: absolute;
+          // right: -2px;
+          // bottom: -93px;
+
+        }
+      }
+
+      // 説明文.共通
+      .feature__body {
+        background-color: #f7e8e8;
+        // width: 100px;
+        box-sizing: border-box;
+
+        // portflio-01
+        .portfolio-title {
+          display: flex;
+          font-family: "Crimson Text", serif;
+
+          .en {
+            // line-height: 100px;
+            font-size: 10vw;
+            // margin-right: 10px;
+            // font-weight: 600;
+            // letter-spacing: 0.3em;
+            // float: left;
+          }
+
+          .no {
+            display: flex;
+
+            &::before {
+              width: 150px;
+              height: 1px;
+              background-color: #181a1a;
+              content: "";
+              display: block;
+              margin: auto 4px;
             }
 
-            .con {
-              width: 100%;
-              text-align: center;
-              position: absolute;
-              bottom: -12px;
-              font-size: 37px;
-              font-family: 'Savoye LET', serif;
+            .type-v {
+              font-size: 30px;
+              opacity: 1;
+              transform: matrix(1, 0, 0, 1, 0, 0);
             }
           }
         }
       }
+    }
 
-      &__body {
+    // エンコーダーサロン
+    .p-1 {
+      width: 90%;
+      margin: 80px auto;
+      // position: relative;
+      // margin-left: 100px;
+      // margin-bottom: 690px;
+      // height: 800px;
 
-        // flex: 5;
-        margin-top: 20px;
-        background-color: rgb(255, 255, 255);
-        // margin-left: 10px;
-        // padding: 15px;
-        padding: 15px 17px;
-        // background-color: rgb(203, 202, 202);
-        text-align: center;
+      .body1 {
+        // padding: 30px 83px 80px 158px;
+        // position: absolute;
+        // right: 0;
+        // top: 60px;
+        // z-index: -1;
+      }
 
-        // & p:not(:last-child) {
-        //   margin-bottom: 20px;
-        // }
-        .data2 {
-          dt {
-            margin: 20px 0;
+      .item1 {}
+    }
+
+    .p-2 {
+      // margin-top: 890px;
+      // position: relative;
+      width: 90%;
+      margin: 80px auto;
+
+      .body2 {
+        // padding: 30px 158px 80px 83px;
+        // font-size: 13px;
+        // margin-top: 300px;
+      }
+
+      // フリマ動画の位置
+      .item2 {
+        // position: absolute;
+        // right: 0px;
+        // top: -60px;
+      }
+    }
+  }
+
+
+  // ボタン
+  // .btn {
+  //   padding: 15px 30px;
+  //   box-sizing: border-box;
+  //   margin-top: 20px;
+  //   display: inline-block;
+  // }
+
+  // .btn.btn-primary {
+  //   cursor: pointer;
+  //   background: #fce7f1;
+  //   border: 2px solid #fce7f1;
+  //   color: #ee76ad;
+  //   border-radius: 5px;
+  //   transition: all .5s ease;
+
+  //   .btn.btn-primary:hover {
+  //     border: 2px solid #ee76ad;
+  //     color: #ee76ad;
+  //     background: transparent;
+  //     background: #fff;
+
+  //   }
+  // }
+
+  /*--------------------------------
+ Works スマホ
+---------------------------------*/
+  .inner-w {
+    width: 100%;
+    // background-color: rgb(237, 235, 235);
+    margin: 50px auto;
+  }
+
+  .works-list {
+    .works {
+      // display: flex;
+      // margin: 100px 200px;
+      // position: relative;
+    }
+
+    .works2 {
+      // display: flex;
+      // position: relative;
+    }
+
+    .works3 {
+      // display: flex;
+      // margin: 60px 200px 300px 200px;
+      // position: relative;
+    }
+
+    .works-item {
+      // position: relative;
+
+      // ChatSpase
+      // Pictweet
+      .video2 {
+        width: 100%;
+        // padding: 1px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+      }
+
+      .video-btn {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 68px;
+        position: absolute;
+        top: 114px;
+        left: 255px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+
+      .image2 {
+        width: 100%;
+        background-color: rgb(187, 183, 183);
+        // padding: 1px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+      }
+
+      .works-title {
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: .05em;
+        font-family: Playfair Display, Noto Serif JP, serif;
+        // position: absolute;
+        // left: 2px;
+        // top: 325.7px;
+
+        .Ex {
+          font-size: 12px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+
+      // GitHublink
+      .works-url {
+        font-family: Playfair Display, Noto Serif JP, serif;
+        font-size: 20px;
+
+        a {
+          -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+          -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+          -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+          -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+          transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+          display: block;
+          margin: 10px 20px;
+          max-width: 170px;
+          text-decoration: none;
+          border-radius: 4px;
+          padding: 5px 20px;
+          text-align: center;
+        }
+
+        a.button {
+          color: rgba(30, 22, 54, 0.6);
+          box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.85);
+            box-shadow: #ee76ad 0 0px 0px 40px inset;
           }
 
-          dd {
-            margin-bottom: 10px;
-            // background-color: #fff;
-
-            p {
-              margin: 5px;
-              font-size: 15px;
-            }
+          span {
+            margin-left: 3px;
           }
+        }
+      }
 
-          &__title {
-            background-color: #f7e8e8;
-            position: relative;
-            width: 100%;
-            height: 26px;
+      .chat {
+        // position: absolute;
+        // left: 370px;
+        // bottom: -77px;
+      }
 
-            .w-boder {
-              border: 1px solid rgb(198, 198, 198);
-              position: absolute;
-              bottom: 10px;
-              width: 103%;
-              height: 100%;
-            }
+      .pic {
+        // position: absolute;
+        // left: 301px;
+        // bottom: -76px;
+      }
 
-            .con {
-              width: 100%;
-              text-align: center;
-              position: absolute;
-              bottom: -12px;
-              top: 9px;
-              font-size: 37px;
-              font-family: 'Savoye LET', serif;
-            }
+      .site {
+        // position: absolute;
+        // left: 384px;
+        // bottom: -80px;
+      }
 
-          }
 
-          .target {
-            // background-color: rgb(188, 188, 188);
-            // display: flex;
-            padding: 2px;
+    }
 
-            .term {
-              // flex: 1;
-              box-sizing: border-box;
-              // border: 1px solid #333;
-              box-shadow: 0px 4px 24px -12px rgba(0, 0, 0, 0.75);
-              padding: 8px;
-              margin: 5px 0;
+    // ChatSpase
+    .works-body {
+      // padding: 30px 60px 60px 90px;
+      background-color: #f7e8e8;
+      width: 100%;
+      // height: 528px;
+    }
 
-              &__title {
-                text-align: center;
-                padding: 5px 0;
-                border-bottom: 1px solid;
-                font-size: 15px;
-              }
+    .w-b1 {
+      // position: absolute;
+      // top: 35px;
+      // right: 106px;
+      // z-index: -1;
+    }
 
-              &__text {
-                padding: 5px 0;
-                font-size: 12px;
-              }
-            }
-          }
 
+    // PicTweet
+    .works-body2 {
+      // padding: 30px 100px 60px 60px;
+      // margin: 247px 0 30px 284px;
+      background-color: #f7e8e8;
+      width: 100%;
+      // height: 530px;
+    }
+
+    .child2 {
+      // position: absolute;
+      // top: 189px;
+      // right: 181px;
+    }
+
+    // ポートフォリオサイト
+    .works-body3 {
+      // padding: 30px 60px 60px 90px;
+      background-color: #f7e8e8;
+      width: 100%;
+      // height: 429px;
+    }
+
+    .w-b3 {
+      // position: absolute;
+      // top: 35px;
+      // right: 60px;
+      // z-index: -1;
+    }
+
+
+  }
+
+  // portflio--------04
+  .portfolio-title2 {
+    display: flex;
+    font-family: "Crimson Text", serif;
+
+    .en {
+      line-height: 100px;
+      font-size: 15px;
+      margin-right: 10px;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      float: left;
+    }
+
+    .no {
+      display: flex;
+
+      &::before {
+        width: 150px;
+        height: 1px;
+        background-color: #181a1a;
+        content: "";
+        display: block;
+        margin: auto 4px;
+      }
+
+      .type-v {
+        font-size: 30px;
+        opacity: 1;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        padding-top: 10px;
+      }
+    }
+  }
+
+  // 説明文
+  .works-text {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 2px 3px 2px 5px;
+    border-radius: 3px;
+    line-height: 22px;
+
+    .text-title {
+      font-size: 16px;
+      font-weight: bold;
+      flex: 1.3;
+    }
+
+    .text-body {
+      flex: 6;
+
+    }
+  }
+
+  // 大変だった事（長文）
+  .works-text2 {
+    padding: 8px 7px 8px 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    margin-bottom: 13px;
+
+    .text-title2 {
+      font-size: 16px;
+      font-weight: bold;
+      flex: .8;
+    }
+
+    .text-body2 {
+      // font-size: 12px;
+      flex: 4;
+
+    }
+  }
+
+  /*--------------------------------
+Skill スマホ
+---------------------------------*/
+  .skill-bg {
+    // background-image: url("../img/IMG_2343.JPG");
+  }
+
+  .skill-section .inner {
+    max-width: 1600px;
+    // background-color: rgb(228, 228, 228);
+    // グラデーション背景
+    background: linear-gradient(0deg, #fff, #f9f0ef, #fff);
+    object-fit: cover;
+    padding: 60px 30px;
+
+    font-family: 'HCo Gotham', sans-serif;
+
+    i {
+      font-size: 40px;
+    }
+  }
+
+  .section-lead {
+    // font-family: 'Playfair Display', serif;
+    letter-spacing: 0.14em;
+    background-size: cover;
+    opacity: .8;
+    font-size: 20px;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
+  }
+
+  .skill-item {
+    display: flex;
+    // flex: 0 0 46%;
+    padding: 30px;
+    width: 493px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    .skill-image-wrapper {
+      flex: 0 0 60px;
+      margin-right: 15px;
+
+    }
+
+    .skill-body {
+      flex: 1;
+      // font-family: 'Playfair Display', serif;
+
+      .skill-body p:not(:last-child) {
+        margin-bottom: 20px;
+
+        .skill-title {
+          margin-bottom: 3px;
+          // font-family: "Crimson Text", serif;
+        }
+      }
+
+      .skill-text {
+        // font-family: 'Playfair Display', serif;
+        font-family: 'HCo Gotham', sans-serif;
+
+
+        .study-title {
+          font-size: 16px;
+          background-color: rgb(242, 242, 242);
+          font-weight: bold;
+          // width: 50%;
+          padding-left: 5px;
+          margin-bottom: 3px;
+        }
+
+        .study-text {
+          font-size: 13px;
+          padding-left: 5px;
         }
       }
     }
   }
-}
 
+  // 星
+  .rate {
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    letter-spacing: .3em;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 20px;
+      display: inline-block;
+      height: 20px;
+      content: "★★★★★";
+    }
+  }
+
+  .rate:before {
+    color: #ddd;
+  }
+
+  .rate:after {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f181b4;
+  }
+
+  .rate1:after {
+    width: 20px;
+  }
+
+  .rate2:after {
+    width: 40px;
+  }
+
+  .rate3:after {
+    width: 60px;
+  }
+
+  .rate4:after {
+    width: 80px;
+  }
+
+  .rate5:after {
+    width: 100px;
+  }
+
+
+
+  /*--------------------------------
+Contact スマホ
+---------------------------------*/
+  .contact-list {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    .contact-item {
+      width: 100px;
+      margin: 0 20px;
+      text-align: center;
+
+      .fa-github {
+        font-size: 56px;
+        color: #646464;
+
+      }
+
+      .fa-envelope {
+        font-size: 34px;
+        color: #fff;
+        background-color: #646464;
+        border-radius: 50%;
+        padding: 11px;
+      }
+
+      .fa-twitter {
+        font-size: 37px;
+        color: #fff;
+        background-color: #646464;
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      .contact-name {
+        font-size: 12px;
+        display: block;
+        margin-top: 5px;
+        color: #333;
+      }
+    }
+  }
+
+  .contact-image {
+    width: 50px;
+  }
+
+  .contact-text {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+  /*--------------------------------
+Footer スマホ
+---------------------------------*/
+  .footer {
+    background-color: #333;
+    max-width: 100vw;
+  }
+
+  .footer .inner4 {
+    padding: 30px;
+    margin: 0px auto;
+  }
+
+  .copyright {
+    font-size: 10px;
+    text-align: center;
+    color: #8c8c8c;
+  }
+
+  .page-top {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ffe8f4;
+  }
+}
 
 
 
 // medium screen 
 /*media Queries タブレット
 ----------------------------------------------------*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
   body {
     font-size: 13px;
     line-height: 1.7;
